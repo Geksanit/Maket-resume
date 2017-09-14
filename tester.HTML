@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>Test Page</h1>
+<h1>Test Page</h1>
+<h1>Test Page</h1>
+<h1>Test Page</h1>
+<h1>Test Page</h1>
+<h1>Test Page</h1>
+<h1>Test Page</h1>
+<script>
+document.write('вся инфа: '+navigator.userAgent+'<br />');
+	
+document.write('название Вашего браузера: '+navigator.appName+'<br />');
+document.write('кодовое название Вашего браузера: '+navigator.appCodeName+'<br />');
+document.write('платформа: '+navigator.platform+'<br />');
+
+document.write('включена ли в Вашем браузере поддержка Java: '+navigator.javaEnabled()+'<br />');
+if (navigator.cookieEnabled)
+   document.write('Ваш браузер может принимать cookie!'+'<br />');
+else
+   document.write('Ваш браузер не может принимать cookie.'+'<br />');
+var browser			= navigator.userAgent;
+		var browserRegex	= /(Android|BlackBerry|IEMobile|Nokia|iP(ad|hone|od)|Opera M(obi|ini))/;
+		var isMobile		= false;
+		if(browser.match(browserRegex))
+		{isMobile = true;}
+		{document.write('mobile: '+isMobile+'<br />');}
+		
+document.write('язык браузера: '+navigator.systemLanguage+'<br />');
+	
+document.write('URL адрес: '+location.href+'<br />');	
+document.write('путь к документу: '+location.pathname+'<br />');
+document.write('имя домена: '+location.host+'<br />');
+function XO(str) {
+	str = "1"+str;
+    if (str.search(/x/i)&str.search(/o/i))
+    {return true} else{return false}
+}
+stm = "eqwqweqwex";
+	document.writeln('123'+XO("xmO")+'<br />');
+	document.writeln(stm.search("x"));
+document.writeln('width= ',window.innerWidth,' height= ',window.innerHeight);
+</script>
+</body>
+</html>
