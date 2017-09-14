@@ -1,11 +1,40 @@
 /* LESS Document */
 body {
-  background-color: #ccccff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #ffffff;
   color: chartreuse;
+  padding: 4%;
+  margin: 0;
 }
 div {
   background-color: #9999ff;
+  opacity: 0.8;
 }
 div div {
   background-color: #6666ff;
+}
+div div div {
+  background-color: #3333ff;
+}
+div div div div {
+  background-color: #0000ff;
+}
+.fon {
+  opacity: 1;
+  background-color: none;
+  background-image: url(cv.png);
+  background-size: cover;
+}
+.column {
+  height: 300px;
+}
+.column-1 {
+  flex: 1 1 300px;
+}
+.column-2 {
+  flex: 2 2 300px;
 }

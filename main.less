@@ -1,17 +1,52 @@
 /* LESS Document */
 @base: #0000FF;
-@color-1: lighten(@base,40%);
+@color-1: #FFF;
 @color-2: lighten(@base,30%);
 @color-3: lighten(@base,20%);
 @color-4: lighten(@base,10%);
 @color-5: lighten(@base,0%);
 body{
+	display: flex;
+	flex-direction: row;
+  justify-content: space-between;
+	align-items: flex-start;
+  flex-wrap: wrap;
+	
 	background-color: @color-1;
 	color:chartreuse;
+	padding: 4%;
+	margin: 0;
 }
 div{
 	background-color: @color-2;
+	opacity: 0.8;
 	div{
 		background-color: @color-3;
+		div{
+			background-color: @color-4;
+			div{
+				background-color: @color-5;
+			}
+		}
 	}
 }
+.fon {
+
+  opacity: 1;
+	background-color: none;
+  background-image: url(cv.png);
+	background-size: cover;
+}
+.column{
+	height: 300px;
+	}
+	
+.column-1{
+	flex:  1 1 300px;
+}
+
+.column-2{
+	flex:  2 2 300px;
+}
+
+
