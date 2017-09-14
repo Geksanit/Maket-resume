@@ -1,0 +1,11 @@
+/* LESS Document */
+body {
+  background-color: #ccccff;
+  color: chartreuse;
+}
+div {
+  background-color: #9999ff;
+}
+div div {
+  background-color: #6666ff;
+}

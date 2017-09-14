@@ -1,0 +1,17 @@
+/* LESS Document */
+@base: #0000FF;
+@color-1: lighten(@base,40%);
+@color-2: lighten(@base,30%);
+@color-3: lighten(@base,20%);
+@color-4: lighten(@base,10%);
+@color-5: lighten(@base,0%);
+body{
+	background-color: @color-1;
+	color:chartreuse;
+}
+div{
+	background-color: @color-2;
+	div{
+		background-color: @color-3;
+	}
+}
