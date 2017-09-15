@@ -45,15 +45,16 @@ body>div{
 }
 
 .column>div{
-		padding-bottom: 50px;
-		margin: 0 6%;
+		margin: 0 6% 50px;
 	}
 
 .column-1{
   flex: 7 7 210px;
 	.avatar{
-		padding: 0 ~"calc((100% - 200px)/2)" 50px;
-		width: @width;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
 		#circle{
 			width: @width;
 			height: @width;
