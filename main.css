@@ -1,4 +1,10 @@
 /* LESS Document */
+/*шрифты*/
+@font-face {
+  font-family: 'myrad';
+  src: url('myriadpro-regular.ttf');
+}
+/*цвета*/
 body {
   display: flex;
   flex-direction: row;
@@ -6,35 +12,123 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   background-color: #ffffff;
-  color: chartreuse;
-  padding: 4%;
+  font-family: Arial;
+  padding: 6% 0;
   margin: 0;
 }
-div {
-  background-color: #9999ff;
-  opacity: 0.8;
-}
-div div {
-  background-color: #6666ff;
-}
-div div div {
-  background-color: #3333ff;
-}
-div div div div {
-  background-color: #0000ff;
-}
+/*
+body>div{
+	background-color: @color-2;
+	opacity: 0.8;
+	div{
+		background-color: @color-3;
+		div{
+			background-color: @color-4;
+			div{
+				background-color: @color-5;
+			}
+		}
+	}
+}*/
 .fon {
-  opacity: 1;
-  background-color: none;
   background-image: url(cv.png);
   background-size: cover;
 }
-.column {
-  height: 300px;
+.column > div {
+  padding-bottom: 50px;
+  margin: 0 6%;
 }
 .column-1 {
-  flex: 1 1 300px;
+  flex: 7 7 210px;
+}
+.column-1 .avatar {
+  padding: 0 calc((100% - 200px)/2) 50px;
+  width: 200px;
+}
+.column-1 .avatar #circle {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  background: #3d6cb0;
+  border-radius: 100px;
+}
+.column-1 .avatar .name {
+  margin: 0px -10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.column-1 .avatar .abold {
+  font-weight: 100;
+  font-size: 36px;
+}
+.column-1 .avatar .bbold {
+  font-weight: 900;
+  font-size: 40px;
+}
+.column-1 .avatar h3 {
+  font-family: myrad;
+  font-size: 25px;
+  color: black;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 .column-2 {
-  flex: 2 2 300px;
+  flex: 10 10 300px;
+}
+.column-2 li {
+  font-family: myrad;
+  font-size: 25px;
+  color: black;
+}
+.column-2 li span {
+  color: #3d6cb0;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.column-2 .experience span {
+  color: black;
+}
+.line {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #3d6cb0;
+}
+.line .icon {
+  flex: 0 0 70px;
+  float: left;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background: #3d6cb0;
+}
+.line .title {
+  flex-grow: auto;
+  font-family: myrad;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.line .blue-line {
+  flex: 1 1 0;
+  height: 6px;
+  background-color: #3d6cb0;
+}
+ul {
+  list-style-image: url(circle.svg);
+}
+/*примеси*/
+.myrad {
+  font-family: myrad;
+  font-size: 25px;
+  color: black;
+}
+.blue {
+  color: #3d6cb0;
+}
+.bold {
+  font-weight: 900;
+  text-transform: uppercase;
 }
