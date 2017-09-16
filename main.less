@@ -11,7 +11,8 @@
 @color-3: lighten(@base,20%);
 @color-4: lighten(@base,10%);
 @color-5: lighten(@base,0%);
-@blue: #3d6cb0;
+@blue: #3f6fb6;
+@gray: #e6e6e6;
 @width: 200px;
 @circles-size: 20px;
 body{
@@ -46,8 +47,11 @@ body{
 			width: @width;
 			height: @width;
 			margin-bottom: 20px;
-			background: @blue;
-			border-radius: @width/2;
+			border-radius: @width/2+10;
+			
+			padding: 10px;
+			background: @blue content-box;
+			border: 1px solid @blue;
 		}
 		.name{
 			margin: 0px -10px;
@@ -68,9 +72,18 @@ body{
 		}
 	}
 	.profile{
-		
+		.icon{
+			background-image: url(profile.png);
+			background-size: 35px 35px;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
 	}
 	.contact{
+		.icon{
+			background-image: url(PHONE.png);
+			background-size: 64px 64px;
+		}
 		.myrad;
 		font-size: 20px;
 		span{
@@ -82,36 +95,67 @@ body{
 		}
 	}
 	.skills{
+		.icon{
+			background-image: url(SKILLS.png);
+			background-size: 64px 64px;
+		}
+		@circles-size: 18px;
 		.myrad;
 		text-align: center;
 		text-transform: uppercase;
 		
 		.circles{
+			display: flex;
+  		justify-content: space-around;
 			.margin-bottom;
+			padding: 0 10%;
 			height: @circles-size;
-			background-color: @blue;
+			div{
+				height: @circles-size;
+				flex-basis: @circles-size;
+				background-color: @blue;
+				border-radius: @circles-size/2;
+			}
+			.gray{
+				background-color: @gray;
+			}
 		}
 	}
 }
 .column-2{
 	flex:  10 10 400px;
 	.education{
-	}
-	li{
-		.myrad;
-		span{
-			.blue;
-			.bold;
-		}	
+		.icon{
+			background-image: url(EDUCATION.png);
+			background-size: 64px 64px;
+		}
 	}
 	.experience{
+		.icon{
+			background-image: url(EXPERIENCE.png);
+			background-size: 64px 64px;
+		}
 		span{
 			color: black;
 		}
 	}
 	.software{
+		.icon{
+			background-image: url(SOFTWARE.png);
+			background-size: 64px 64px;
+		}
 		.container{
 			.normal-flex;
+			div:nth-child(1){
+				div:nth-child(1){div{width:90%;}}
+				div:nth-child(2){div{width:70%;}}
+				div:nth-child(3){div{width:60%;}}
+			}
+			div:nth-child(2){
+				div:nth-child(1){div{width:80%;}}
+				div:nth-child(2){div{width:70%;}}
+				div:nth-child(3){div{width:90%;}}
+			}
 		}
 		.soft{
 			flex:  1 1 100px;
@@ -119,9 +163,13 @@ body{
 			text-transform: uppercase;
 			div{
 				height: @circles-size;
-				background-color: @blue;
+				background-color: @gray;
 				.margin-bottom;
+				div{
+					.rect;
+				}
 			}
+
 		}
 	}
 }
@@ -156,6 +204,14 @@ body{
 }
 ul{
 	list-style-image: url(circle.svg);
+	li{
+		margin: 10px 0;
+		.myrad;
+		span{
+			.blue;
+			.bold;
+		}	
+	}
 }
 /*primesi*/
 .myrad{
@@ -183,6 +239,12 @@ ul{
 .margin-bottom{
 	margin-top: 10px;
 	margin-bottom: 15px;
+}
+.rect{
+	content: "";
+	width:20%;
+	height: 100%;
+	background-color: @blue;
 }
 
 

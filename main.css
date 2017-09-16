@@ -39,8 +39,10 @@ body {
   width: 200px;
   height: 200px;
   margin-bottom: 20px;
-  background: #3d6cb0;
-  border-radius: 100px;
+  border-radius: 110px;
+  padding: 10px;
+  background: #3f6fb6 content-box;
+  border: 1px solid #3f6fb6;
 }
 .column-1 .avatar .name {
   margin: 0px -10px;
@@ -62,17 +64,27 @@ body {
   font-weight: 900;
   text-transform: uppercase;
 }
+.column-1 .profile .icon {
+  background-image: url(profile.png);
+  background-size: 35px 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .column-1 .contact {
   font-family: myrad;
   font-size: 25px;
   color: black;
   font-size: 20px;
 }
+.column-1 .contact .icon {
+  background-image: url(PHONE.png);
+  background-size: 64px 64px;
+}
 .column-1 .contact span {
   display: inline-block;
   width: 100px;
   margin-top: 20px;
-  color: #3d6cb0;
+  color: #3f6fb6;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -83,27 +95,44 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.column-1 .skills .icon {
+  background-image: url(SKILLS.png);
+  background-size: 64px 64px;
+}
 .column-1 .skills .circles {
+  display: flex;
+  justify-content: space-around;
   margin-top: 10px;
   margin-bottom: 15px;
-  height: 20px;
-  background-color: #3d6cb0;
+  padding: 0 10%;
+  height: 18px;
+}
+.column-1 .skills .circles div {
+  height: 18px;
+  flex-basis: 18px;
+  background-color: #3f6fb6;
+  border-radius: 9px;
+}
+.column-1 .skills .circles .gray {
+  background-color: #e6e6e6;
 }
 .column-2 {
   flex: 10 10 400px;
 }
-.column-2 li {
-  font-family: myrad;
-  font-size: 25px;
-  color: black;
+.column-2 .education .icon {
+  background-image: url(EDUCATION.png);
+  background-size: 64px 64px;
 }
-.column-2 li span {
-  color: #3d6cb0;
-  font-weight: 900;
-  text-transform: uppercase;
+.column-2 .experience .icon {
+  background-image: url(EXPERIENCE.png);
+  background-size: 64px 64px;
 }
 .column-2 .experience span {
   color: black;
+}
+.column-2 .software .icon {
+  background-image: url(SOFTWARE.png);
+  background-size: 64px 64px;
 }
 .column-2 .software .container {
   display: flex;
@@ -111,6 +140,24 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+.column-2 .software .container div:nth-child(1) div:nth-child(1) div {
+  width: 90%;
+}
+.column-2 .software .container div:nth-child(1) div:nth-child(2) div {
+  width: 70%;
+}
+.column-2 .software .container div:nth-child(1) div:nth-child(3) div {
+  width: 60%;
+}
+.column-2 .software .container div:nth-child(2) div:nth-child(1) div {
+  width: 80%;
+}
+.column-2 .software .container div:nth-child(2) div:nth-child(2) div {
+  width: 70%;
+}
+.column-2 .software .container div:nth-child(2) div:nth-child(3) div {
+  width: 90%;
 }
 .column-2 .software .soft {
   flex: 1 1 100px;
@@ -121,16 +168,22 @@ body {
 }
 .column-2 .software .soft div {
   height: 20px;
-  background-color: #3d6cb0;
+  background-color: #e6e6e6;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+.column-2 .software .soft div div {
+  content: "";
+  width: 20%;
+  height: 100%;
+  background-color: #3f6fb6;
 }
 .line {
   display: flex;
   height: 70px;
   align-items: center;
   margin-bottom: 20px;
-  color: #3d6cb0;
+  color: #3f6fb6;
 }
 .line .icon {
   flex: 0 0 64px;
@@ -138,8 +191,8 @@ body {
   float: left;
   padding: 2px;
   border-radius: 35px;
-  background: #3d6cb0 content-box;
-  border: 1px solid #3d6cb0;
+  background: #3f6fb6 content-box;
+  border: 1px solid #3f6fb6;
 }
 .line .title {
   flex-grow: auto;
@@ -152,10 +205,21 @@ body {
 .line .blue-line {
   flex: 1 1 0;
   height: 6px;
-  background-color: #3d6cb0;
+  background-color: #3f6fb6;
 }
 ul {
   list-style-image: url(circle.svg);
+}
+ul li {
+  margin: 10px 0;
+  font-family: myrad;
+  font-size: 25px;
+  color: black;
+}
+ul li span {
+  color: #3f6fb6;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 /*primesi*/
 .myrad {
@@ -164,7 +228,7 @@ ul {
   color: black;
 }
 .blue {
-  color: #3d6cb0;
+  color: #3f6fb6;
 }
 .bold {
   font-weight: 900;
@@ -183,4 +247,10 @@ ul {
 .margin-bottom {
   margin-top: 10px;
   margin-bottom: 15px;
+}
+.rect {
+  content: "";
+  width: 20%;
+  height: 100%;
+  background-color: #3f6fb6;
 }
