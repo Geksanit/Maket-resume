@@ -1,10 +1,10 @@
 /* LESS Document */
-/*шрифты*/
+/*fonts*/
 @font-face{
 			  font-family: 'myrad';
 			  src:url('myriadpro-regular.ttf');
 }
-/*цвета*/
+/*colors*/
 @base: #0000FF;
 @color-1: #FFF;
 @color-2: lighten(@base,30%);
@@ -13,43 +13,30 @@
 @color-5: lighten(@base,0%);
 @blue: #3d6cb0;
 @width: 200px;
+@circles-size: 20px;
 body{
-	display: flex;
-	flex-direction: row;
-  justify-content: space-between;
-	align-items: flex-start;
-  flex-wrap: wrap;
+	.normal-flex;
 	
 	background-color: @color-1;
 	font-family: Arial;
 	padding:6% 0;
 	margin: 0;
 }
-/*
-body>div{
-	background-color: @color-2;
-	opacity: 0.8;
-	div{
-		background-color: @color-3;
-		div{
-			background-color: @color-4;
-			div{
-				background-color: @color-5;
-			}
-		}
-	}
-}*/
-.fon {
-  background-image: url(cv.png);
-	background-size: cover;
-}
 
 .column>div{
 		margin: 0 6% 50px;
 	}
+@media (min-width:900px){
+	.column-1{
+		margin-left:10%;
+	}
+	.column-2{
+		margin-right:10%;
+	}
+}
 
 .column-1{
-  flex: 7 7 210px;
+  flex: 7 7 280px;
 	.avatar{
 		display: flex;
 		flex-direction: column;
@@ -83,9 +70,31 @@ body>div{
 	.profile{
 		
 	}
+	.contact{
+		.myrad;
+		font-size: 20px;
+		span{
+			display: inline-block;
+			width: 100px;
+			margin-top: 20px;
+			.blue;
+			.bold;
+		}
+	}
+	.skills{
+		.myrad;
+		text-align: center;
+		text-transform: uppercase;
+		
+		.circles{
+			.margin-bottom;
+			height: @circles-size;
+			background-color: @blue;
+		}
+	}
 }
 .column-2{
-	flex:  10 10 300px;
+	flex:  10 10 400px;
 	.education{
 	}
 	li{
@@ -100,20 +109,36 @@ body>div{
 			color: black;
 		}
 	}
+	.software{
+		.container{
+			.normal-flex;
+		}
+		.soft{
+			flex:  1 1 100px;
+			.myrad;
+			text-transform: uppercase;
+			div{
+				height: @circles-size;
+				background-color: @blue;
+				.margin-bottom;
+			}
+		}
+	}
 }
 .line{
 	display: flex;
 	height: 70px;
 	align-items: center;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	color:@blue;
 	.icon{
-		flex: 0 0 70px;
+		flex: 0 0 64px;
+		height: 64px;
 		float: left;
-		width: 70px;
-		height: 70px;
+		padding: 2px;
 		border-radius: 35px;
-		background: @blue;
+		background: @blue content-box;
+		border: 1px solid @blue;
 	}
 	.title{
 		flex-grow: auto;
@@ -132,7 +157,7 @@ body>div{
 ul{
 	list-style-image: url(circle.svg);
 }
-/*примеси*/
+/*primesi*/
 .myrad{
 	font-family: myrad;
 	font-size: 25px;
@@ -144,6 +169,20 @@ ul{
 .bold{
 	font-weight: 900;
 	text-transform: uppercase;
+}
+.normal-flex{
+	display: flex;
+	flex-direction: row;
+  justify-content: space-between;
+	align-items: flex-start;
+  flex-wrap: wrap;
+}
+.margin-r{
+	margin-right: 5%;
+}
+.margin-bottom{
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 
 
