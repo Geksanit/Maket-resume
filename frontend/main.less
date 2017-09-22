@@ -9,6 +9,7 @@
 @gray: #e6e6e6;
 @width: 200px;
 @circles-size: 20px;
+@icon-path: './icons/';
 body{
 	.normal-flex;
 	
@@ -67,7 +68,7 @@ body{
 	}
 	.profile{
 		.icon{
-			background-image: url(../icons/profile.png);
+			background-image: url("@{icon-path}profile.png");
 			background-size: 35px 35px;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -75,7 +76,7 @@ body{
 	}
 	.contact{
 		.icon{
-			background-image: url(../icons/PHONE.png);
+			background-image: url("@{icon-path}PHONE.png");
 			background-size: 64px 64px;
 		}
 		.myrad;
@@ -90,7 +91,7 @@ body{
 	}
 	.skills{
 		.icon{
-			background-image: url(../icons/SKILLS.png);
+			background-image: url("@{icon-path}SKILLS.png");
 			background-size: 64px 64px;
 		}
 		@circles-size: 18px;
@@ -120,13 +121,13 @@ body{
 	flex:  10 10 400px;
 	.education{
 		.icon{
-			background-image: url(../icons/EDUCATION.png);
+			background-image: url("@{icon-path}EDUCATION.png");
 			background-size: 64px 64px;
 		}
 	}
 	.experience{
 		.icon{
-			background-image: url(../icons/EXPERIENCE.png);
+			background-image: url("@{icon-path}EXPERIENCE.png");
 			background-size: 64px 64px;
 		}
 		span{
@@ -135,20 +136,20 @@ body{
 	}
 	.software{
 		.icon{
-			background-image: url(../icons/SOFTWARE.png);
+			background-image: url("@{icon-path}SOFTWARE.png");
 			background-size: 64px 64px;
 		}
 		.container{
 			.normal-flex;
 			div:nth-child(1){
-				div:nth-child(1){div{width:90%;}}
-				div:nth-child(2){div{width:70%;}}
-				div:nth-child(3){div{width:60%;}}
+				div:nth-child(2){div{width:90%;}}
+				div:nth-child(4){div{width:70%;}}
+				div:nth-child(6){div{width:60%;}}
 			}
 			div:nth-child(2){
-				div:nth-child(1){div{width:80%;}}
-				div:nth-child(2){div{width:70%;}}
-				div:nth-child(3){div{width:90%;}}
+				div:nth-child(2){div{width:80%;}}
+				div:nth-child(4){div{width:70%;}}
+				div:nth-child(6){div{width:90%;}}
 			}
 		}
 		.soft{
@@ -183,7 +184,6 @@ body{
 		border: 1px solid @blue;
 	}
 	.title{
-		flex-grow: auto;
 		font-family: myrad;
 		font-size: 40px;
 		font-weight: bold;
