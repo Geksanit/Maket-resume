@@ -1,0 +1,21 @@
+// in body
+include ./line/line
+
+
+mixin page
+    .column.column-1
+        include ./avatar/avatar
+        +avatar
+        include ./profile/profile
+        +profile
+        include ./contact/contact
+        +contact
+        include ./skills/skills
+        +skills
+    .column.column-2
+        include ./education/education
+        +education
+        include ./experience/experience
+        +experience
+        include ./software/software
+        +software

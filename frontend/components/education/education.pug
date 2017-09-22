@@ -1,0 +1,10 @@
+include ../text/lorem-short.pug
+-var n=3;
+include ../line/line
+mixin education
+    .education
+        +line('education')
+        ul
+            - for (var x = 0; x < n; x++)
+                li <span>master degree</span> //Feb 2011-Jun 2014<br>UNIVERSITY NAME
+                    +text

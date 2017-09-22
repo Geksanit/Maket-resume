@@ -1,0 +1,33 @@
+{
+  "name": "Maket-resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "less.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geksanit/Maket-resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geksanit/Maket-resume/issues"
+  },
+  "homepage": "https://github.com/Geksanit/Maket-resume#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "pug": "^2.0.0-rc.4",
+    "pug-loader": "^2.3.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0"
+  }
+}

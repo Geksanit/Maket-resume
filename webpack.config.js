@@ -14,7 +14,7 @@ module.exports = {
     context: __dirname + '\\frontend',
 
     entry: {
-        'index': './index/index.js',
+        'index': './index.js',
     },
     output: {
         path: __dirname + '/public',
@@ -26,7 +26,7 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('[name].css', {allChunks: true}),
         extractLess,
-        new HtmlWebpackPlugin({filename: 'index.html',chunks: ['index'],template: './index/index.pug'})
+        new HtmlWebpackPlugin({filename: 'index.html',chunks: ['index'],template: './index.pug'})
     ],
     resolve:{
         modules:['node-modules'],
