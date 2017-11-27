@@ -1,15 +1,22 @@
-.soft(){
+.soft(@color1, @color2){
     .soft{
         &__name{
+            font-size: 16px;
+            font-weight: 900;
             text-transform: uppercase;
         }
         &__progress{
-            height: @circles-size;
-            background-color: @gray;
-            .margin-bottom;
+            height: 15px;
+            background-color: @color2;
+            margin-top: 10px;
+            margin-bottom: 12px;
             div{
-                .rect;
+                content: "";
+                width:20%;
+                height: 100%;
+                background-color: @blue;
             }
+
         }
     }
 }

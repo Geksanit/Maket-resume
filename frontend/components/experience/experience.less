@@ -1,7 +1,24 @@
-.experience(){
+.experience(@color){
     .experience{
-        span{
-            color: black;
+        ul{
+            list-style-image: url(../circle.svg);
+            li{
+                margin: 15px 0;
+                span{
+                    font-size: 16px;
+                    font-weight: 900;
+
+                }
+                span:nth-child(1){
+                    text-transform: uppercase;
+                    color: @color;
+                }
+                span:nth-child(2){
+                }
+                span:nth-child(4){
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 }
