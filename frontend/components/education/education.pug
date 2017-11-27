@@ -2,9 +2,8 @@
 include ../line/line
 mixin education
     .education
-        +line('education')
+        +line({ title:'education', src:'education-icon' })
         ul
             - for (var x = 0; x < n; x++)
                 li <span>master degree</span> //Feb 2011-Jun 2014<br>UNIVERSITY NAME
-                </li>
                     include ../text/lorem-short.txt

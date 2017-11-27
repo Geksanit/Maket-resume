@@ -1,4 +1,11 @@
-include ./components/page.pug
+
+include ./components/avatar/avatar
+include ./components/profile/profile
+include ./components/contact/contact
+include ./components/skills/skills
+include ./components/experience/experience
+include ./components/education/education
+include ./components/software/software
 doctype html
 html
     head
@@ -6,4 +13,20 @@ html
         meta(name='viewport', content="initial-scale=1.0, width=device-width")
         title Resume
     body
-        +page
+        main
+            .column.column-1
+                section.section
+                    +avatar
+                section.section
+                    +profile
+                section.section
+                    +contact
+                section.section
+                    +skills
+            .column.column-2
+                section.section
+                    +education
+                section.section
+                    +experience
+                section.section
+                    +software
