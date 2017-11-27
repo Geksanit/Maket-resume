@@ -1,0 +1,108 @@
+/* LESS Document */
+/*fonts*/
+@font-face{
+	font-family: 'myrad';
+	src:url('./fonts/myriadpro-regular.ttf');
+}
+/*colors*/
+@blue: #0270ba;
+@gray: #e6e6e6;
+/*styles*/
+body{
+    margin: 0;
+    padding: 0;
+
+	background-color: white;
+    background: url(./wer.png) no-repeat;
+    opacity: 0.5;
+    background-attachment: fixed;
+    background-size: 800px;
+    background-position: top;
+
+    font-family: myrad, Arial, sans-serif;
+    font-size: 12px;
+    main{
+        padding: 50px 40px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 800px;
+        @media (max-width:800px){
+            width: 100%;
+            padding: 5%;
+        }
+        background-color: #e6e6e6;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .column-1{
+            flex: 5 5 260px;
+            margin-right: 50px;
+        }
+        .column-2{
+            flex:  8 8 410px;
+        }
+    }
+}
+
+
+ul{
+	list-style-image: url(components/circle.svg);
+	li{
+		margin: 10px 0;
+		.myrad;
+		span{
+			.blue;
+			.bold;
+		}	
+	}
+}
+/*primesi*/
+.myrad{
+	font-family: myrad;
+	font-size: 25px;
+	color: black;
+}
+.blue{
+	color:@blue;
+}
+.bold{
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.margin-r{
+	margin-right: 5%;
+}
+.margin-bottom{
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.rect{
+	content: "";
+	width:20%;
+	height: 100%;
+	background-color: @blue;
+}
+
+@import "components/line/line";
+.line(@blue);
+
+@import "components/avatar/avatar";
+.avatar(@blue);
+
+@import "components/profile/profile";
+.profile;
+
+@import "components/contact/contact";
+.contact(@blue);
+
+@import "components/skills/skills";
+.skills(@blue,@gray);
+
+@import "components/experience/experience";
+.experience;
+
+@import "components/software/software";
+.software(@blue,@gray);
+

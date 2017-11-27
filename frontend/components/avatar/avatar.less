@@ -1,0 +1,33 @@
+.avatar(@color){
+    .avatar {
+        @width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+        text-align: center;
+
+        &__circle {
+            box-sizing: border-box;
+            width: @width;
+            height: @width;
+            margin-bottom: 20px;
+            border-radius: @width/2+10;
+
+            padding: 10px;
+            background: @color content-box;
+            border: 1px solid @color;
+        }
+        &__name {
+            font-weight: 100;
+            font-size: 36px;
+        }
+        &__surname {
+            font-weight: 900;
+            font-size: 40px;
+        }
+        &__prof{
+            font-weight: 900;
+        }
+    }
+}

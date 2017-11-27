@@ -1,0 +1,24 @@
+.skills(@color1,@color2){
+    .skills{
+        @circles-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+
+        .circles{
+            display: flex;
+            justify-content: space-around;
+            .margin-bottom;
+            padding: 0 10%;
+            height: @circles-size;
+            div{
+                height: @circles-size;
+                flex-basis: @circles-size;
+                background-color: @color1;
+                border-radius: @circles-size/2;
+            }
+            .gray{
+                background-color: @color2;
+            }
+        }
+    }
+}
