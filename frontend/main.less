@@ -1,13 +1,13 @@
 /* LESS Document */
 /*fonts*/
 @font-face{
-			  font-family: 'myrad';
-			  src:url('./fonts/myriadpro-regular.ttf');
+	font-family: 'myrad';
+	src:url('./fonts/myriadpro-regular.ttf');
 }
 /*colors*/
 @blue: #0270ba;
 @gray: #e6e6e6;
-@width: 200px;
+
 @circles-size: 20px;
 @icon-path: './icons/';
 body{
@@ -33,39 +33,7 @@ body{
 
 .column-1{
   flex: 7 7 280px;
-	.avatar{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		
-		#circle{
-			width: @width;
-			height: @width;
-			margin-bottom: 20px;
-			border-radius: @width/2+10;
-			
-			padding: 10px;
-			background: @blue content-box;
-			border: 1px solid @blue;
-		}
-		.name{
-			margin: 0px -10px;
-			text-transform: uppercase;
-			text-align: center;
-		}
-		.abold{
-			font-weight: 100;
-			font-size: 36px;
-		}
-		.bbold{
-			font-weight: 900;
-			font-size: 40px;
-		}
-		h3{
-			.myrad;
-			.bold;
-		}
-	}
+
 	.profile{
 		.icon{
 			background-image: url("@{icon-path}profile.png");
