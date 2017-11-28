@@ -1,24 +1,23 @@
 include ../line/line
 mixin skills
     .skills
-        +line('skills')
-        span creative
-            <div class="circles">
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-            <div></div><div></div><div></div><div class="gray"></div><div class="gray"></div><div class="gray"></div>
-            </div>
-        span teamwork
-            <div class="circles">
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-            <div></div><div></div><div></div><div></div><div></div><div class="gray"></div>
-            </div>
-        span innovate
-            <div class="circles">
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-            <div class="gray"></div><div class="gray"></div><div class="gray"></div><div class="gray"></div><div class="gray"></div><div class="gray"></div>
-            </div>
-        span communicaton
-            <div class="circles">
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-            <div></div><div></div><div></div><div></div><div></div><div class="gray"></div>
-            </div>
+        +line({ title:'skills', src:'skills-icon' })
+        .skills__name creative
+        .skills__progress
+            +progress(10,7)
+        .skills__name teamwork
+        .skills__progress
+            +progress(10,9)
+        .skills__name innovate
+        .skills__progress
+            +progress(10,5)
+        .skills__name communicaton
+        .skills__progress
+            +progress(10,7)
+
+mixin progress(max,value)
+    - for (var x = 0; x < max; x++)
+        if (x < value)
+            .blue
+        else
+            div

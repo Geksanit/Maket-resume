@@ -48,13 +48,7 @@ module.exports = {
                     pretty: true
                 }
             }
-        }, /*{
-            test: /\.css$/,
-            use: ExtractTextPlugin.extract({
-                fallback: 'style',
-                use: 'css'
-            })
-        },*/ {
+        }, {
             test: /\.less$/,
             use: extractLess.extract({
                 use: [{
@@ -62,13 +56,10 @@ module.exports = {
                 }, {
                     loader: "less"
                 }],
-                // use style-loader in development
-                //fallback: "style"
             })
         }, {
             test: /\.(png|ipg|svg|ttf|eot|woff|woff2)$/,
             loader: 'file?name=[path][name].[ext]'
         }]
-
     }
 };

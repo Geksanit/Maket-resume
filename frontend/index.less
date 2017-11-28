@@ -1,0 +1,71 @@
+/* LESS Document */
+/*fonts*/
+@font-face{
+	font-family: 'myrad';
+	src:url('./fonts/myriadpro-regular.ttf');
+}
+/*colors*/
+@blue: #0270ba;
+@gray: #e6e6e6;
+/*styles*/
+body{
+    margin: 0;
+    padding: 0;
+	background-color: white;
+    font-family: myrad, Arial, sans-serif;
+    font-size: 12px;
+    main{
+        padding: 50px 40px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 800px;
+        @media (max-width:816px){
+            width: 100%;
+            padding: 5%;
+            margin: 0;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .column-1{
+            flex: 5 5 260px;
+            margin-right: 50px;
+            @media (max-width:816px){
+                margin: 0;
+                flex: 5 5 310px;
+            }
+        }
+        .column-2{
+            flex:  8 8 410px;
+        }
+        .section{
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@import "components/line/line";
+.line(@blue);
+
+@import "components/avatar/avatar";
+.avatar(@blue);
+
+@import "components/profile/profile";
+.profile;
+
+@import "components/contact/contact";
+.contact(@blue);
+
+@import "components/skills/skills";
+.skills(@blue,@gray);
+
+@import "components/education/education";
+.education(@blue);
+
+@import "components/experience/experience";
+.experience(@blue);
+
+@import "components/software/software";
+.software(@blue,@gray);

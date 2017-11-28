@@ -1,8 +1,16 @@
 include ../line/line
 mixin contact
     .contact
-        +line('contact')
-        <span>address</span> Main Street, City.<br>
-        <span>e-mail</span> contact@domain.com<br>
-        <span>phone</span>555-555-555<br>
-        <span>website</span>www.yourweb.com<br>
+        +line({ title:'contact', src:'contact-icon' })
+        p
+            span.blue address
+            span Main Street, City.
+        p
+            span.blue e-mail
+            span contact@domain.com
+        p
+            span.blue phone
+            span 555-555-555
+        p
+            span.blue website
+            span www.yourweb.com

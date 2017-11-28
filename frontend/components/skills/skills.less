@@ -1,0 +1,27 @@
+.skills(@color1,@color2){
+    .skills{
+        @circles-size: 10px;
+        &__name{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        &__progress{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            padding: 0 10%;
+            height: @circles-size;
+            div{
+                height: @circles-size;
+                flex-basis: @circles-size;
+                background-color: @color2;
+                border-radius: @circles-size/2;
+            }
+            .blue{
+                background-color: @color1;
+            }
+        }
+    }
+}

@@ -1,14 +1,14 @@
 include ../line/line
-include ./soft__name
+include ./soft
 mixin software
     .software
-        +line('software')
-        .container
-            .soft.margin-r
-                +soft__name('photoshop')
-                +soft__name('illustrator')
-                +soft__name('indesign')
-            .soft
-                +soft__name('dreamweaver')
-                +soft__name('after effects')
-                +soft__name('html&ampcss')
+        +line({ title:'software', src:'software-icon' })
+        .software__container
+            .software__soft
+                +soft('photoshop')
+                +soft('illustrator')
+                +soft('indesign')
+            .software__soft
+                +soft('dreamweaver')
+                +soft('after effects')
+                +soft('html&css')
