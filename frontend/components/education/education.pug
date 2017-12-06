@@ -1,14 +1,10 @@
 include ../line/line
-mixin education
-    - var n = 3;
+include ../li-text/li-text
+mixin education()
     .education
         +line({ title:'education', src:'education-icon' })
-        ul
-            - for (var x = 0; x < n; x++)
-                li
-                    span master degree
-                    span  // Feb 2011-Jun 2014
-                    br
-                    span univercity name
-                    br
-                    include ../text/lorem-short.txt
+        ul.education__ul
+            +li-text('master degree','// Feb 2011-Jun 2014','univercity name')
+            +li-text('master degree','// Feb 2011-Jun 2014','univercity name')
+            +li-text('master degree','// Feb 2011-Jun 2014','univercity name')
+            +li-text('master degree','// Feb 2011-Jun 2014','univercity name')

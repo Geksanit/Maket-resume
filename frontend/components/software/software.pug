@@ -1,14 +1,14 @@
 include ../line/line
-include ./soft
+include ../soft/soft
 mixin software
     .software
         +line({ title:'software', src:'software-icon' })
         .software__container
-            .software__soft
-                +soft('photoshop')
-                +soft('illustrator')
-                +soft('indesign')
-            .software__soft
-                +soft('dreamweaver')
-                +soft('after effects')
-                +soft('html&css')
+            .software__column
+                +soft({ name:'photoshop', percent: 90 })
+                +soft({ name:'illustrator', percent: 70 })
+                +soft({ name:'indesign', percent: 55 })
+            .software__column
+                +soft({ name:'dreamweaver', percent: 80 })
+                +soft({ name:'after effects', percent: 60 })
+                +soft({ name:'html&css', percent: 92 })
