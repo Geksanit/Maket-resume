@@ -7,10 +7,13 @@ mixin contact
             span.contact__value Main Street, City.
         p.contact__line
             span.contact__contact e-mail
-            span.contact__value contact@domain.com
+            span.contact__value
+                a(href = "mailto:contact@domain.com") contact@domain.com
         p.contact__line
             span.contact__contact phone
-            span.contact__value 555-555-555
+            span.contact__value
+                a(href = "tel:555-555-555") 555-555-555
         p.contact__line
             span.contact__contact website
-            span.contact__value www.yourweb.com
+            span.contact__value
+                a(href = "www.yourweb.com" target="_blank") www.yourweb.com
