@@ -1,12 +1,12 @@
 mixin line(options)
     if (!options || (typeof(options) !== 'object'))
         - options = {}
-    if !options.title
+    if (!options.title)
         - options.title = 'Title'
     .line
-        if options.src
+        if (options.src)
             - var url = require('./icons/' + options.src + '.png')
-            .line__icon(style="background-image: url(" + url + ")")
+            .line__icon(style = "background-image: url(" + url + ")")
         else
             .line__icon
         .line__title #{options.title}

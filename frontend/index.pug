@@ -1,4 +1,3 @@
-
 include ./components/avatar/avatar
 include ./components/profile/profile
 include ./components/contact/contact
@@ -6,11 +5,15 @@ include ./components/skills/skills
 include ./components/experience/experience
 include ./components/education/education
 include ./components/software/software
+include ./favicons/favicons
 doctype html
 html
     head
         meta(charset = 'utf-8')
-        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        meta(name = 'viewport', content = "initial-scale=1.0, width=device-width")
+        meta(name="Keywords" content="resume")
+        meta(name="description" content="Сайт - визитка")
+        +favicons
         title Resume
     body
         main

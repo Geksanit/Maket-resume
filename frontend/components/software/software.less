@@ -1,35 +1,22 @@
-@import "soft";
 .software(@color1,@color2){
-    .software{
-        &__container{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            .progress(@percent){
-                div{
-                    div{
-                        width: @percent;
-                    }
-                }
-            }
-            >div:nth-child(1){
-                margin-right: 5%;
-                div:nth-child(1){.progress(90%);}
-                div:nth-child(2){.progress(70%);}
-                div:nth-child(3){.progress(60%);}
-            }
-            >div:nth-child(2){
-                div:nth-child(1){.progress(80%);}
-                div:nth-child(2){.progress(70%);}
-                div:nth-child(3){.progress(90%);}
-            }
-        }
-        &__soft{
-            flex:  1 1 100px;
-            .soft(@color1,@color2)
+  .software{
+    &__container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-left: 5px;
+      padding-top: 5px;
 
-        }
+      >div:nth-child(1){
+        margin-right: 10%;
+      }
     }
+    &__column{
+      flex:  1 1 100px;
+      @import '../soft/soft';
+      .soft(@color1,@color2)
+    }
+  }
 }

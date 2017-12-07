@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="Keywords" content="resume">
+    <meta name="description" content="Сайт - визитка">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <title>Resume</title>
   <link href="index.css" rel="stylesheet"></head>
   <body>
@@ -12,7 +20,7 @@
           <div class="avatar">
             <div class="avatar__circle"></div>
             <div class="avatar__name">name here</div>
-            <div class="avatar__surname">suranme</div>
+            <div class="avatar__surname">surname</div>
             <div class="avatar__prof">graphic designer</div>
           </div>
         </section>
@@ -23,7 +31,7 @@
               <div class="line__title">profile</div>
               <div class="line__line"></div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <strong>pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</strong></p>
+            <p class="profile__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <strong>pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</strong></p>
           </div>
         </section>
         <section class="section">
@@ -33,10 +41,10 @@
               <div class="line__title">contact</div>
               <div class="line__line"></div>
             </div>
-            <p><span class="blue">address</span><span>Main Street, City.</span></p>
-            <p><span class="blue">e-mail</span><span>contact@domain.com</span></p>
-            <p><span class="blue">phone</span><span>555-555-555</span></p>
-            <p><span class="blue">website</span><span>www.yourweb.com</span></p>
+            <p class="contact__line"><span class="contact__contact">address</span><span class="contact__value">Main Street, City.</span></p>
+            <p class="contact__line"><span class="contact__contact">e-mail</span><span class="contact__value"><a href="mailto:contact@domain.com">contact@domain.com</a></span></p>
+            <p class="contact__line"><span class="contact__contact">phone</span><span class="contact__value"><a href="tel:555-555-555">555-555-555</a></span></p>
+            <p class="contact__line"><span class="contact__contact">website</span><span class="contact__value"><a href="www.yourweb.com" target="_blank">www.yourweb.com</a></span></p>
           </div>
         </section>
         <section class="section">
@@ -46,57 +54,67 @@
               <div class="line__title">skills</div>
               <div class="line__line"></div>
             </div>
-            <div class="skills__name">creative</div>
-            <div class="skills__progress">
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="skills__name">teamwork</div>
-            <div class="skills__progress">
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div></div>
-            </div>
-            <div class="skills__name">innovate</div>
-            <div class="skills__progress">
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="skills__name">communicaton</div>
-            <div class="skills__progress">
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div class="blue"></div>
-              <div></div>
-              <div></div>
-              <div></div>
+            <div class="skills__container">
+              <div class="skills__name">creative</div>
+              <div class="progress skills__progress-mix">
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle"></div>
+                <div class="progress__circle"></div>
+                <div class="progress__circle"></div>
+              </div>
+              <div class="skills__name">teamwork</div>
+              <div class="progress skills__progress-mix">
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle"></div>
+              </div>
+              <div class="skills__name">innovate</div>
+              <div class="progress skills__progress-mix">
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle"></div>
+                <div class="progress__circle"></div>
+                <div class="progress__circle"></div>
+                <div class="progress__circle"></div>
+                <div class="progress__circle"></div>
+                <div class="progress__circle"></div>
+              </div>
+              <div class="skills__name">communicaton</div>
+              <div class="progress skills__progress-mix">
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle progress__circle_color_blue"></div>
+                <div class="progress__circle"></div>
+              </div>
             </div>
           </div>
         </section>
@@ -109,15 +127,30 @@
               <div class="line__title">education</div>
               <div class="line__line"></div>
             </div>
-            <ul>
-              <li><span>master degree</span><span> // Feb 2011-Jun 2014</span><br><span>univercity name</span><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+            <ul class="education__ul">
+              <li class="li-text"><span class="li-text__title">master degree</span><span class="li-text__date">// Feb 2011-Jun 2014</span>
+                <p class="li-text__name">univercity name</p>
+                <p class="li-text__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
 
+                </p>
               </li>
-              <li><span>master degree</span><span> // Feb 2011-Jun 2014</span><br><span>univercity name</span><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+              <li class="li-text"><span class="li-text__title">master degree</span><span class="li-text__date">// Feb 2011-Jun 2014</span>
+                <p class="li-text__name">univercity name</p>
+                <p class="li-text__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
 
+                </p>
               </li>
-              <li><span>master degree</span><span> // Feb 2011-Jun 2014</span><br><span>univercity name</span><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+              <li class="li-text"><span class="li-text__title">master degree</span><span class="li-text__date">// Feb 2011-Jun 2014</span>
+                <p class="li-text__name">univercity name</p>
+                <p class="li-text__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
 
+                </p>
+              </li>
+              <li class="li-text"><span class="li-text__title">master degree</span><span class="li-text__date">// Feb 2011-Jun 2014</span>
+                <p class="li-text__name">univercity name</p>
+                <p class="li-text__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+
+                </p>
               </li>
             </ul>
           </div>
@@ -129,15 +162,24 @@
               <div class="line__title">experience</div>
               <div class="line__line"></div>
             </div>
-            <ul>
-              <li><span>company name</span><span> //Feb 2011-Jun 2014</span><br><span>your job here</span><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+            <ul class="experience__ul">
+              <li class="li-text"><span class="li-text__title">company name</span><span class="li-text__date">// Feb 2011-Jun 2014</span>
+                <p class="li-text__name">your job here</p>
+                <p class="li-text__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
 
+                </p>
               </li>
-              <li><span>company name</span><span> //Feb 2011-Jun 2014</span><br><span>your job here</span><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+              <li class="li-text"><span class="li-text__title">company name</span><span class="li-text__date">// Feb 2011-Jun 2014</span>
+                <p class="li-text__name">your job here</p>
+                <p class="li-text__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
 
+                </p>
               </li>
-              <li><span>company name</span><span> //Feb 2011-Jun 2014</span><br><span>your job here</span><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+              <li class="li-text"><span class="li-text__title">company name</span><span class="li-text__date">// Feb 2011-Jun 2014</span>
+                <p class="li-text__name">your job here</p>
+                <p class="li-text__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
 
+                </p>
               </li>
             </ul>
           </div>
@@ -150,37 +192,478 @@
               <div class="line__line"></div>
             </div>
             <div class="software__container">
-              <div class="software__soft">
-                <div class="soft"><span class="soft__name">photoshop</span>
+              <div class="software__column">
+                <div class="soft "><span class="soft__name">photoshop</span>
                   <div class="soft__progress">
-                    <div></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
                   </div>
                 </div>
-                <div class="soft"><span class="soft__name">illustrator</span>
+                <div class="soft "><span class="soft__name">illustrator</span>
                   <div class="soft__progress">
-                    <div></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
                   </div>
                 </div>
-                <div class="soft"><span class="soft__name">indesign</span>
+                <div class="soft "><span class="soft__name">indesign</span>
                   <div class="soft__progress">
-                    <div></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
                   </div>
                 </div>
               </div>
-              <div class="software__soft">
-                <div class="soft"><span class="soft__name">dreamweaver</span>
+              <div class="software__column">
+                <div class="soft "><span class="soft__name">dreamweaver</span>
                   <div class="soft__progress">
-                    <div></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
                   </div>
                 </div>
-                <div class="soft"><span class="soft__name">after effects</span>
+                <div class="soft "><span class="soft__name">after effects</span>
                   <div class="soft__progress">
-                    <div></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
                   </div>
                 </div>
-                <div class="soft"><span class="soft__name">html&amp;css</span>
+                <div class="soft "><span class="soft__name">html&amp;css</span>
                   <div class="soft__progress">
-                    <div></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
+                    <div class="soft__percent"></div>
                   </div>
                 </div>
               </div>

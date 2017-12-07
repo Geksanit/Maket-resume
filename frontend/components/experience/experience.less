@@ -1,24 +1,9 @@
 .experience(@color){
-    .experience{
-        ul{
-            list-style-image: url(../circle.svg);
-            li{
-                margin: 15px 0;
-                span{
-                    font-size: 16px;
-                    font-weight: 900;
-
-                }
-                span:nth-child(1){
-                    text-transform: uppercase;
-                    color: @color;
-                }
-                span:nth-child(2){
-                }
-                span:nth-child(4){
-                    text-transform: uppercase;
-                }
-            }
-        }
+  .experience{
+    &__ul{
+      list-style-image: url(../circle.svg);
+      padding-left: 34px;
+      margin: 25px 0 0 0;
     }
+  }
 }

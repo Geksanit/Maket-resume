@@ -1,0 +1,7 @@
+mixin li-text(title,date,name)
+    li.li-text
+        span.li-text__title #{title}
+        span.li-text__date #{date}
+        p.li-text__name #{name}
+        p.li-text__text
+            include ../text/lorem-short.txt

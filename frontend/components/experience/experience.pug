@@ -1,14 +1,9 @@
--var n=3;
 include ../line/line
+include ../li-text/li-text
 mixin experience
     .experience
         +line({ title:'experience', src:'experience-icon' })
-        ul
-            - for (var x = 0; x < n; x++)
-                li
-                    span company name
-                    span  //Feb 2011-Jun 2014
-                    br
-                    span your job here
-                    br
-                    include ../text/lorem-short.txt
+        ul.experience__ul
+            +li-text('company name','// Feb 2011-Jun 2014','your job here')
+            +li-text('company name','// Feb 2011-Jun 2014','your job here')
+            +li-text('company name','// Feb 2011-Jun 2014','your job here')

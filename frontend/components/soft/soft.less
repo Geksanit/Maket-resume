@@ -1,0 +1,21 @@
+.soft(@color1, @color2){
+  .soft{
+    &__name{
+      font-size: 1rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    &__progress {
+      height: 14px;
+      background-color: @color2;
+      margin-top: 10px;
+      margin-bottom: 13px;
+    }
+    &__percent{
+      width:1%;
+      height: 100%;
+      background-color: @color1;
+      float: left;
+    }
+  }
+}

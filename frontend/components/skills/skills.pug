@@ -1,23 +1,15 @@
 include ../line/line
+include ../progress/progress
 mixin skills
     .skills
         +line({ title:'skills', src:'skills-icon' })
-        .skills__name creative
-        .skills__progress
-            +progress(10,7)
-        .skills__name teamwork
-        .skills__progress
-            +progress(10,9)
-        .skills__name innovate
-        .skills__progress
-            +progress(10,5)
-        .skills__name communicaton
-        .skills__progress
-            +progress(10,7)
+        .skills__container
+            .skills__name creative
+            +progress({ mix:'skills__progress-mix', max:12, value:9 })
+            .skills__name teamwork
+            +progress({ mix:'skills__progress-mix', max:12, value:11 })
+            .skills__name innovate
+            +progress({ mix:'skills__progress-mix', max:12, value:6 })
+            .skills__name communicaton
+            +progress({ mix:'skills__progress-mix', max:12, value:11 })
 
-mixin progress(max,value)
-    - for (var x = 0; x < max; x++)
-        if (x < value)
-            .blue
-        else
-            div
