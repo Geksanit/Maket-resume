@@ -6,8 +6,8 @@ mixin progress(options)
     - options.max = options.max || 5
 
     div(class = "progress " + options.mix)
-        - for (var x = 0; x < options.max; x++)
-        if (x < options.value)
-            .progress__circle.progress__circle_color_blue
+        - for (var counter = 0; counter < options.max; counter += 1)
+        if (counter < options.value)
+            .progress__circle.progress_color_blue
         else
             .progress__circle

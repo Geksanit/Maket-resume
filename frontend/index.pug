@@ -9,24 +9,24 @@ include ./favicons/favicons
 doctype html
 html
     head
-        meta(charset = 'utf-8')
-        meta(name = 'viewport', content = "initial-scale=1.0, width=device-width")
-        meta(name="Keywords" content="resume")
-        meta(name="description" content="Сайт - визитка")
+        meta(charset = "utf-8")
+        meta(name = "viewport", content = "initial-scale=1.0, width=device-width")
+        meta(name = "Keywords" content = "resume")
+        meta(name = "description" content = "Сайт - визитка")
         +favicons
         title Resume
     body
         main
-            .column.column-1
+            .column.column-left
                 section.section
-                    +avatar
+                    +avatar()
                 section.section
-                    +profile
+                    +profile({ title: 'profile', src: 'profile-icon' })
                 section.section
-                    +contact
+                    +contact()
                 section.section
-                    +skills
-            .column.column-2
+                    +skills()
+            .column.column-right
                 section.section
                     +education
                 section.section

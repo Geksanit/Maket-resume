@@ -31,21 +31,21 @@ body main {
     margin: 0;
   }
 }
-body main .column-1 {
+body main .column-left {
   flex: 0 0 263px;
   margin-right: 50px;
 }
 @media (max-width: 816px) {
-  body main .column-1 {
+  body main .column-left {
     margin: 0;
     flex: 1 1 316px;
   }
 }
-body main .column-2 {
+body main .column-right {
   flex: 0 0 408px;
 }
 @media (max-width: 816px) {
-  body main .column-2 {
+  body main .column-right {
     flex: 1 1 408px;
   }
 }
@@ -106,6 +106,7 @@ body main .section {
   padding: 10px;
   background: #0270ba content-box;
   border: 1px solid #0270ba;
+  line-height: 150px;
 }
 .avatar__name {
   font-weight: 100;
@@ -118,7 +119,7 @@ body main .section {
   font-size: 2.7rem;
   line-height: 2.7rem;
 }
-.avatar__prof {
+.avatar__profession {
   font-size: 1rem;
   font-weight: 900;
   white-space: nowrap;
@@ -132,7 +133,7 @@ body main .section {
 .contact__line {
   margin: 18px 0;
 }
-.contact__contact {
+.contact__name {
   width: 80px;
   color: #0270ba;
   text-transform: uppercase;
@@ -151,7 +152,7 @@ body main .section {
   text-align: center;
   text-transform: uppercase;
   font-size: 1rem;
-  margin-top: 0px;
+  margin-top: 0;
 }
 .skills__progress-mix {
   margin-top: 6px;
@@ -170,16 +171,16 @@ body main .section {
   background-color: #e6e6e6;
   border-radius: 5.5px;
 }
-.skills .progress__circle_color_blue {
+.skills .progress_color_blue {
   background-color: #0270ba;
 }
 .education__ul {
-  list-style-image: url(components/circle.svg);
+  list-style-image: url(icons/circle.svg);
   padding-left: 34px;
   margin: 15px 0 0 0;
 }
 .experience__ul {
-  list-style-image: url(components/circle.svg);
+  list-style-image: url(icons/circle.svg);
   padding-left: 34px;
   margin: 25px 0 0 0;
 }
@@ -191,9 +192,6 @@ body main .section {
   flex-wrap: wrap;
   padding-left: 5px;
   padding-top: 5px;
-}
-.software__container > div:nth-child(1) {
-  margin-right: 10%;
 }
 .software__column {
   flex: 1 1 100px;
@@ -215,6 +213,9 @@ body main .section {
   background-color: #0270ba;
   float: left;
 }
+.software__column-first {
+  margin-right: 10%;
+}
 .li-text {
   margin: 10px 0;
 }
@@ -229,7 +230,7 @@ body main .section {
   font-weight: 900;
   margin-left: 10px;
 }
-.li-text__name {
+.li-text__place {
   font-size: 1rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -240,4 +241,4 @@ body main .section {
   margin: 5px 0;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyIsInNvdXJjZVJvb3QiOiIifQ==*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsiLCJzb3VyY2VSb290IjoiIn0=*/

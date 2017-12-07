@@ -1,9 +1,10 @@
 include ../line/line
 include ../li-text/li-text
+
 mixin experience
     .experience
         +line({ title:'experience', src:'experience-icon' })
         ul.experience__ul
-            +li-text('company name','// Feb 2011-Jun 2014','your job here')
-            +li-text('company name','// Feb 2011-Jun 2014','your job here')
-            +li-text('company name','// Feb 2011-Jun 2014','your job here')
+            +li-text({ title:'company name', date: '// Feb 2011-Jun 2014', place: 'your job here' })
+            +li-text({ title:'company name', date: '// Feb 2011-Jun 2014', place: 'your job here' })
+            +li-text({ title:'company name', date: '// Feb 2011-Jun 2014', place: 'your job here' })

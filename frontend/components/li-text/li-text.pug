@@ -1,7 +1,16 @@
-mixin li-text(title,date,name)
+mixin li-text(options)
+    if (!options || (typeof(options) !== 'object'))
+        - options = {}
+    - options.title = options.title || 'title'
+    - options.date = options.date || 'date'
+    - options.place = options.place || 'place'
+
     li.li-text
-        span.li-text__title #{title}
-        span.li-text__date #{date}
-        p.li-text__name #{name}
-        p.li-text__text
-            include ../text/lorem-short.txt
+        span.li-text__title #{options.title}
+        span.li-text__date #{options.date }
+        p.li-text__place #{options.place}
+        if options.text
+            p.li-text__text #{options.text}
+        else
+            p.li-text__text
+                include ../text/lorem-short.txt
