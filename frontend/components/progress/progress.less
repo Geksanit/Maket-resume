@@ -1,18 +1,21 @@
-.progress(@color1,@color2) {
+.progress(@color1, @color2) {
+
   .progress {
     @circles-size: 11px;
     display: flex;
     justify-content: space-between;
     height: @circles-size;
     box-sizing: border-box;
+
     &__circle {
       height: @circles-size;
       flex-basis: @circles-size;
       background-color: @color2;
       border-radius: @circles-size/2;
-      &_color_blue {
-        background-color: @color1;
-      }
+    }
+
+    &_color_blue {
+      background-color: @color1;
     }
   }
 }

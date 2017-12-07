@@ -1,10 +1,11 @@
 include ../line/line
 include ../li-text/li-text
+
 mixin education()
     .education
         +line({ title:'education', src:'education-icon' })
         ul.education__ul
-            +li-text('master degree','// Feb 2011-Jun 2014','univercity name')
-            +li-text('master degree','// Feb 2011-Jun 2014','univercity name')
-            +li-text('master degree','// Feb 2011-Jun 2014','univercity name')
-            +li-text('master degree','// Feb 2011-Jun 2014','univercity name')
+            +li-text({ title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name' })
+            +li-text({ title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name' })
+            +li-text({ title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name' })
+            +li-text({ title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name' })

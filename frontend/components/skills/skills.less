@@ -1,20 +1,25 @@
-.skills(@color1,@color2){
+.skills(@color1, @color2) {
+
   .skills{
-    &__container{
+
+    &__container {
       padding: 5px 11%;
     }
-    &__name{
+
+    &__name {
       text-align: center;
       text-transform: uppercase;
       font-size: 1rem;
-      margin-top: 0px;
+      margin-top: 0;
     }
-    &__progress-mix{
+
+    &__progress-mix {
       margin-top: 6px;
       margin-bottom: 13px;
       width: 100%;
     }
+
     @import '../progress/progress';
-    .progress(@color1,@color2);
+    .progress(@color1, @color2);
   }
 }

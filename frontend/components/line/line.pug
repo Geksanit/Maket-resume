@@ -1,8 +1,12 @@
 mixin line(options)
-    if (!options || (typeof(options) !== 'object'))
+    - // if (!options || (typeof(options) !== 'object'))
+    if !options
         - options = {}
+    - console.log(1,options.title)
     if (!options.title)
         - options.title = 'Title'
+    - console.log(2,options.title)
+
     .line
         if (options.src)
             - var url = require('./icons/' + options.src + '.png')

@@ -1,19 +1,13 @@
 include ../line/line
-mixin contact
+mixin contact__line(name,value)
+    p.contact__line
+        span.contact__name #{name}
+        span.contact__value !{value}
+
+mixin contact()
     .contact
         +line({ title:'contact', src:'contact-icon' })
-        p.contact__line
-            span.contact__contact address
-            span.contact__value Main Street, City.
-        p.contact__line
-            span.contact__contact e-mail
-            span.contact__value
-                a(href = "mailto:contact@domain.com") contact@domain.com
-        p.contact__line
-            span.contact__contact phone
-            span.contact__value
-                a(href = "tel:555-555-555") 555-555-555
-        p.contact__line
-            span.contact__contact website
-            span.contact__value
-                a(href = "www.yourweb.com" target="_blank") www.yourweb.com
+        +contact__line('address', 'Main Street, City.')
+        +contact__line('e-mail', '<a href = "mailto:contact@domain.com">contact@domain.com</a>')
+        +contact__line('phone', '<a href = "tel:555-555-555">555-555-555</a>')
+        +contact__line('website', '<a href = "www.yourweb.com" target = "_blank" rel = "noopener noreferrer">www.yourweb.com</a>')

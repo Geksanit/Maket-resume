@@ -1,25 +1,27 @@
 /* LESS Document */
 /*fonts*/
-@font-face{
+@font-face {
 	font-family: 'myrad';
 	src:url('./fonts/myriadpro-regular.ttf');
 }
 /*colors*/
 @blue: #0270ba;
 @gray: #e6e6e6;
+@white: white;
 /*styles*/
-body{
+body {
   margin: 0;
   padding: 0;
-	background-color: white;
+	background-color: @white;
   font-family: myrad, Arial, sans-serif;
   font-size: 12px;
-  main{
+
+  main {
     padding: 49px 37px 49px 39px;
     margin: 0 auto;
     box-sizing: border-box;
     width: 800px;
-    @media (max-width:816px){
+    @media (max-width:816px) {
       width: 100%;
       padding: 5%;
       margin: 0;
@@ -29,7 +31,8 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    .column-1{
+
+    .column-left {
       flex: 0 0 263px;
       margin-right: 50px;
       @media (max-width:816px){
@@ -37,13 +40,15 @@ body{
         flex: 1 1 316px;
       }
     }
-    .column-2{
+
+    .column-right {
       flex:  0 0 408px;
       @media (max-width:816px){
         flex: 1 1 408px;
       }
     }
-    .section{
+
+    .section {
       margin-bottom: 38px;
     }
   }

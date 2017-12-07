@@ -1,6 +1,16 @@
-mixin avatar()
+mixin avatar(options)
+    if !options
+        - options = {}
+    - options.name = options.name || 'name here'
+    - options.surname = options.surname || 'surname'
+    - options.profession = options.profession || 'graphic designer'
+
     .avatar
-        .avatar__circle
-        .avatar__name name here
-        .avatar__surname surname
-        .avatar__prof graphic designer
+        if (options.src)
+            - var url = require('./icons/' + options.src + '.png')
+            img.avatar__circle(src = url alt = "photo")
+        else
+            .avatar__circle
+        .avatar__name #{options.name}
+        .avatar__surname #{options.surname}
+        .avatar__profession #{options.profession}

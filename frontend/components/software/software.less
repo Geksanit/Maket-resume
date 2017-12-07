@@ -1,6 +1,8 @@
-.software(@color1,@color2){
-  .software{
-    &__container{
+.software(@color1, @color2){
+
+  .software {
+
+    &__container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -8,15 +10,17 @@
       flex-wrap: wrap;
       padding-left: 5px;
       padding-top: 5px;
+    }
 
-      >div:nth-child(1){
+    &__column {
+      flex:  1 1 100px;
+
+      @import '../soft/soft';
+      .soft(@color1,@color2);
+
+      &-first {
         margin-right: 10%;
       }
-    }
-    &__column{
-      flex:  1 1 100px;
-      @import '../soft/soft';
-      .soft(@color1,@color2)
     }
   }
 }
