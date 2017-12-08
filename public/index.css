@@ -2,7 +2,39 @@
 /*fonts*/
 @font-face {
   font-family: 'myrad';
-  src: url(fonts/myriadpro-regular.ttf);
+  src: url(fonts/MyriadProRegular/MyriadProRegular.ttf) format("truetype"), url(fonts/MyriadProRegular/MyriadProRegular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'myrad';
+  src: url(fonts/MyriadProItalic/MyriadProItalic.ttf) format("truetype"), url(fonts/MyriadProItalic/MyriadProItalic.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'myrad';
+  src: url(fonts/MyriadProSemiBold/MyriadProSemiBold.ttf) format("truetype"), url(fonts/MyriadProSemiBold/MyriadProSemiBold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'myrad';
+  src: url(fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf) format("truetype"), url(fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff) format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'myrad';
+  src: url(fonts/MyriadProBold/MyriadProBold.ttf) format("truetype"), url(fonts/MyriadProBold/MyriadProBold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'myrad';
+  src: url(fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf) format("truetype"), url(fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
 }
 /*colors*/
 /*styles*/
@@ -241,4 +273,4 @@ body main .section {
   margin: 5px 0;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsiLCJzb3VyY2VSb290IjoiIn0=*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyIsInNvdXJjZVJvb3QiOiIifQ==*/
