@@ -2,11 +2,8 @@ include ../line/line
 mixin profile(options)
     if !options
         - options = {}
+    - options.text = options.text || 'text'
 
     .profile
         +line(options)
-        if options.text
-            p.profile__text #{options.text}
-        else
-            p.profile__text
-                include ../text/lorem-long.txt
+        p.profile__text !{options.text}
