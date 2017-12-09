@@ -6,11 +6,12 @@ mixin skills__line(name,value)
         .skills__name #{name}
         +progress({ mix: 'skills__progress-mix', max: 12, value: value })
 
-mixin skills()
+mixin skills(options)
+    - options = options || {}
+    - options.list = options.list || []
+
     .skills
-        +line({ title: 'skills', src: 'skills-icon' })
+        +line(options)
         .skills__container
-            +skills__line('creative',9)
-            +skills__line('teamwork',11)
-            +skills__line('innovate',6)
-            +skills__line('communicaton',11)
+            each skill in options.list
+                +skills__line(skill[0], skill[1])
