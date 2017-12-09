@@ -1,9 +1,9 @@
 mixin avatar(options)
     if !options
         - options = {}
-    - options.name = options.name || 'name here'
+    - options.name = options.name || 'name'
     - options.surname = options.surname || 'surname'
-    - options.profession = options.profession || 'graphic designer'
+    - options.profession = options.profession || 'profession'
 
     .avatar
         if (options.src)

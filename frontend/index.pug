@@ -13,23 +13,42 @@ html
         meta(name = "viewport", content = "initial-scale=1.0, width=device-width")
         meta(name = "Keywords" content = "resume")
         meta(name = "description" content = "Сайт - визитка")
-        +favicons
+        +favicons()
         title Resume
     body
         main
             .column.column-left
-                section.section
-                    +avatar()
-                section.section
-                    +profile({ title: 'profile', src: 'profile-icon', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <strong>pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</strong>' })
-                section.section
-                    +contact()
-                section.section
-                    +skills()
+                +avatar({ name: 'name here', surname: 'surname', profession: 'graphic designer' })
+                +profile({ title: 'profile', src: 'profile-icon', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <strong>pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</strong>' })
+                +contact({ title: 'contact', src: 'contact-icon', list: [
+                    ['address', 'Main Street, City.'],
+                    ['e-mail', '<a href = "mailto:contact@domain.com">contact@domain.com</a>'],
+                    ['phone', '<a href = "tel:555-555-555">555-555-555</a>'],
+                    ['website', '<a href = "www.yourweb.com" target = "_blank" rel = "noopener noreferrer">www.yourweb.com</a>']
+                ] })
+                +skills({ title: 'skills', src: 'skills-icon', list: [
+                    ['creative', 9],
+                    ['teamwork', 11],
+                    ['innovate', 6],
+                    ['communicaton', 11]
+                ] })
             .column.column-right
-                section.section
-                    +education
-                section.section
-                    +experience
-                section.section
-                    +software
+                +education({ title: 'education', src: 'education-icon', list: [
+                    { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
+                    { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
+                    { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
+                    { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' }
+                ] })
+                +experience({ title:'experience', src:'experience-icon', list: [
+                    { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
+                    { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
+                    { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' }
+                ] })
+                +software({ title: 'software', src: 'software-icon', list: [
+                  { name: 'photoshop', percent: 90 },
+                  { name: 'dreamweaver', percent: 80 },
+                  { name: 'illustrator', percent: 70 },
+                  { name: 'after effects', percent: 60 },
+                  { name: 'indesign', percent: 55 },
+                  { name: 'html&css', percent: 92 }
+                ] })

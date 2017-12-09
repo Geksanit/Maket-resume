@@ -1,10 +1,12 @@
 include ../line/line
 include ../li-text/li-text
 
-mixin experience
+mixin experience(options)
+    - options = options || {}
+    - options.list = options.list || []
+
     .experience
-        +line({ title:'experience', src:'experience-icon' })
+        +line(options)
         ul.experience__ul
-            +li-text({ title:'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' })
-            +li-text({ title:'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' })
-            +li-text({ title:'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' })
+            each li in options.list
+                +li-text(li)

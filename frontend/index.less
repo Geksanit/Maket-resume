@@ -2,43 +2,43 @@
 /*fonts*/
 @font-face {
 	font-family: 'myrad';
-	src: url('./fonts/MyriadProRegular/MyriadProRegular.ttf') format("truetype"),
-    url('./fonts/MyriadProRegular/MyriadProRegular.woff') format("woff");
+	src: url('./fonts/MyriadProRegular/MyriadProRegular.ttf') format('truetype'),
+    url('./fonts/MyriadProRegular/MyriadProRegular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'myrad';
-  src: url('./fonts/MyriadProItalic/MyriadProItalic.ttf') format("truetype"),
-    url('./fonts/MyriadProItalic/MyriadProItalic.woff') format("woff");
+  src: url('./fonts/MyriadProItalic/MyriadProItalic.ttf') format('truetype'),
+    url('./fonts/MyriadProItalic/MyriadProItalic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: 'myrad';
-  src: url('./fonts/MyriadProSemiBold/MyriadProSemiBold.ttf') format("truetype"),
-  url('./fonts/MyriadProSemiBold/MyriadProSemiBold.woff') format("woff");
+  src: url('./fonts/MyriadProSemiBold/MyriadProSemiBold.ttf') format('truetype'),
+  url('./fonts/MyriadProSemiBold/MyriadProSemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'myrad';
-  src: url('./fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf') format("truetype"),
-  url('./fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff') format("woff");
+  src: url('./fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf') format('truetype'),
+  url('./fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
   font-family: 'myrad';
-  src: url('./fonts/MyriadProBold/MyriadProBold.ttf') format("truetype"),
-  url('./fonts/MyriadProBold/MyriadProBold.woff') format("woff");
+  src: url('./fonts/MyriadProBold/MyriadProBold.ttf') format('truetype'),
+  url('./fonts/MyriadProBold/MyriadProBold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'myrad';
-  src: url('./fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf') format("truetype"),
-  url('./fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff') format("woff");
+  src: url('./fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf') format('truetype'),
+  url('./fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff') format('woff');
   font-weight: 700;
   font-style: italic;
 }
@@ -55,11 +55,12 @@ body {
   font-size: 12px;
 
   main {
-    padding: 49px 37px 49px 39px;
+    padding: 47px 37px 49px 39px;
     margin: 0 auto;
     box-sizing: border-box;
     width: 800px;
-    @media (max-width:816px) {
+
+    @media (max-width: 816px) {
       width: 100%;
       padding: 5%;
       margin: 0;
@@ -73,7 +74,8 @@ body {
     .column-left {
       flex: 0 0 263px;
       margin-right: 50px;
-      @media (max-width:816px){
+
+      @media (max-width: 816px) {
         margin: 0;
         flex: 1 1 316px;
       }
@@ -81,13 +83,10 @@ body {
 
     .column-right {
       flex:  0 0 408px;
-      @media (max-width:816px){
+
+      @media (max-width: 816px) {
         flex: 1 1 408px;
       }
-    }
-
-    .section {
-      margin-bottom: 38px;
     }
   }
 }
@@ -99,7 +98,7 @@ body {
 .avatar(@blue);
 
 @import 'components/profile/profile';
-.profile;
+.profile();
 
 @import 'components/contact/contact';
 .contact(@blue);

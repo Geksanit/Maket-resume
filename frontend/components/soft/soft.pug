@@ -1,11 +1,11 @@
-mixin soft(options)
+mixin soft(options, mix)
     if (!options || (typeof(options) !== 'object'))
         - options = {}
-    - options.mix = options.mix || ''
+    - mix = mix || ''
     - options.name = options.name || 'name'
     - options.percent = options.percent || 50
 
-    div(class = "soft " + options.mix)
+    div(class = "soft " + mix)
         span.soft__name #{options.name}
         .soft__progress
             - for (var counter = 0; counter < options.percent; counter += 1)

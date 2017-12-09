@@ -4,6 +4,8 @@ mixin progress(options)
     - options.mix = options.mix || ''
     - options.value = options.value || 1
     - options.max = options.max || 5
+    if (options.value > options.max)
+        - options.value = options.max
 
     div(class = "progress " + options.mix)
         - for (var counter = 0; counter < options.max; counter += 1)

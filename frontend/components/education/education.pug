@@ -1,11 +1,12 @@
 include ../line/line
 include ../li-text/li-text
 
-mixin education()
+mixin education(options)
+    - options = options || {}
+    - options.list = options.list || []
+
     .education
-        +line({ title:'education', src:'education-icon' })
+        +line(options)
         ul.education__ul
-            +li-text({ title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' })
-            +li-text({ title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' })
-            +li-text({ title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' })
-            +li-text({ title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'univercity name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' })
+            each li in options.list
+                +li-text(li)
