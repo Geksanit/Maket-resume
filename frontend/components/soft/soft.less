@@ -9,17 +9,23 @@
     }
 
     &__progress {
-      height: 14px;
       background-color: @color2;
-      margin-top: 8px;
-      margin-bottom: 13px;
+      margin-top: 0.5rem;
+      margin-bottom: 0.8rem;
+      display: flex;
+      justify-content: flex-start;
     }
 
-    &__percent {
+    &__percent-1 {
       width: 1%;
-      height: 100%;
+      padding-top: 8%;
       background-color: @color1;
-      float: left;
+    }
+
+    &__percent-10 {
+      width: 10%;
+      padding-top: 8%;
+      background-color: @color1;
     }
   }
 }
