@@ -11,7 +11,7 @@ const extractLess = new ExtractTextPlugin({
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    context: __dirname + '\\frontend',
+    context: __dirname + '/frontend',
 
     entry: {
         'index': './index.js',

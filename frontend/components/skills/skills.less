@@ -1,10 +1,9 @@
 .skills(@color1, @color2) {
 
   .skills{
-    margin-bottom: 38px;
 
     &__container {
-      padding: 5px 11%;
+      padding: 0.3rem 11%;
     }
 
     &__name {
@@ -14,13 +13,13 @@
       margin-top: 0;
     }
 
-    &__progress-mix {
-      margin-top: 6px;
-      margin-bottom: 13px;
-      width: 100%;
-    }
-
     @import '../progress/progress';
     .progress(@color1, @color2);
+
+    &__progress-mix {
+      margin-top: 0.4rem;
+      margin-bottom: 0.8rem;
+      width: 100%;
+    }
   }
 }
