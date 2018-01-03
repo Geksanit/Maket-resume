@@ -1,26 +1,29 @@
 .avatar(@color) {
 
   .avatar {
-    @width: 150px;
+    @width: 60.4%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
     text-align: center;
-    padding-left: 14px;
-    padding-top: 10px;
-    margin-bottom: 46px;
+    padding-left: 5%;
+    padding-top: 0.6rem;
+    margin-bottom: 3rem;
 
     &__circle {
       box-sizing: border-box;
       width: @width;
-      height: @width;
-      margin-bottom: 15px;
-      border-radius: @width / 2 + 10;
-      padding: 10px;
+      margin-bottom: 0.9rem;
+      border-radius: 100%;
+      padding: 4%;
       background: @color content-box;
       border: 1px solid @color;
       line-height: @width;
+
+      &-filler {
+        padding-top: 100%;
+      }
     }
 
     &__name {
@@ -28,7 +31,6 @@
       font-size: 2.3rem;
       line-height: 2.3rem;
       white-space: nowrap;
-      width: 200px;
       overflow: hidden;
       text-overflow: clip;
     }
@@ -36,17 +38,17 @@
     &__surname {
       font-weight: 900;
       font-size: 2.7rem;
-      line-height: 2.7rem;
-      width: 200px;
+      line-height: 2.2rem;
       overflow: hidden;
       text-overflow: clip;
+      margin-bottom: 0.5rem;
+      letter-spacing: -2px;
     }
 
     &__profession {
       font-size: 1rem;
       font-weight: 900;
       white-space: nowrap;
-      width: 200px;
       overflow: hidden;
       text-overflow: clip;
     }

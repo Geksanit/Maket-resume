@@ -11,5 +11,7 @@ mixin progress(options)
         - for (var counter = 0; counter < options.max; counter += 1)
         if (counter < options.value)
             .progress__circle.progress_color_blue
+                .progress__circle-filler
         else
             .progress__circle
+                .progress__circle-filler

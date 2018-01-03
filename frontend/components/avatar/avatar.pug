@@ -8,9 +8,11 @@ mixin avatar(options)
     .avatar
         if (options.src)
             - var url = require('./icons/' + options.src + '.png')
-            img.avatar__circle(src = url alt = "photo")
+            .avatar__circle
+                img.avatar__circle-filler(src = url alt = "photo")
         else
             .avatar__circle
+                .avatar__circle-filler
         .avatar__name #{options.name}
         .avatar__surname #{options.surname}
         .avatar__profession #{options.profession}

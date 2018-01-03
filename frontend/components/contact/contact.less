@@ -1,14 +1,14 @@
-.contact(@color){
+.contact(@color, @text){
 
   .contact {
-    margin-bottom: 26px;
+    margin-bottom: 1.6rem;
 
     &__line {
-      margin: 18px 0;
+      margin: 1.13rem 0;
     }
 
     &__name {
-      width: 80px;
+      width: 30%;
       color: @color;
       text-transform: uppercase;
       font-size: 0.9rem;
@@ -19,6 +19,11 @@
     &__value {
       display: inline-block;
       font-size: 0.9rem;
+
+      a {
+        color: @text;
+        text-decoration: none;
+      }
     }
   }
 }

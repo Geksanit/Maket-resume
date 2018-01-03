@@ -46,6 +46,7 @@
 @blue: #0270ba;
 @gray: #e6e6e6;
 @white: white;
+@text-color: black;
 /*styles*/
 body {
   margin: 0;
@@ -55,38 +56,53 @@ body {
   font-size: 12px;
 
   main {
-    padding: 47px 37px 49px 39px;
+    padding: 48px 40px;
     margin: 0 auto;
     box-sizing: border-box;
     width: 800px;
+
+    @media (min-width: 1500px) {
+      width: 50%;
+      padding: 2%;
+    }
+
+    @media (min-width: 1200px) {
+      width: 75%;
+      padding: 3%;
+    }
+
+    @media (min-width: 1000px) {
+      width: 80%;
+      padding: 4%;
+    }
 
     @media (max-width: 816px) {
       width: 100%;
       padding: 5%;
       margin: 0;
+      flex-wrap: wrap;
     }
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
 
     .column-left {
-      flex: 0 0 263px;
+      flex: 1 1 262px;
       margin-right: 50px;
 
+      @media (min-width: 1000px) {
+        margin-right: 6%;
+      }
+
       @media (max-width: 816px) {
-        margin: 0;
+        margin-right: 0;
         flex: 1 1 316px;
       }
     }
 
     .column-right {
-      flex:  0 0 408px;
-
-      @media (max-width: 816px) {
-        flex: 1 1 408px;
-      }
+      flex:  1 1 408px;
     }
   }
 }
@@ -101,7 +117,7 @@ body {
 .profile();
 
 @import 'components/contact/contact';
-.contact(@blue);
+.contact(@blue, @text-color);
 
 @import 'components/skills/skills';
 .skills(@blue,@gray);
