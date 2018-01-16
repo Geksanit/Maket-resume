@@ -5,7 +5,7 @@ mixin education(options)
     - options = options || {}
     - options.list = options.list || []
 
-    .education
+    section.education
         +line(options)
         ul.education__list
             each line in options.list

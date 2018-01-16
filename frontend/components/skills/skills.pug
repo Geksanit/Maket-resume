@@ -10,7 +10,7 @@ mixin skills(options)
     - options = options || {}
     - options.list = options.list || []
 
-    .skills
+    section.skills
         +line(options)
         .skills__container
             each skill in options.list

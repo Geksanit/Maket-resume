@@ -5,7 +5,7 @@ mixin experience(options)
     - options = options || {}
     - options.list = options.list || []
 
-    .experience
+    section.experience
         +line(options)
         ul.experience__list
             each line in options.list

@@ -5,7 +5,7 @@ mixin line(options)
     if (!options.title)
         - options.title = 'Title'
 
-    .line
+    header.line
         if (options.src)
             - var url = require('./icons/' + options.src + '.png')
             .line__icon(style = "background-image: url(" + url + ")")
