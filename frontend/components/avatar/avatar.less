@@ -25,22 +25,25 @@
         padding-top: 100%;
       }
     }
+    &__name,
+    &__surname,
+    &__profession {
+      max-width: 90%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
+    }
 
     &__name {
       font-weight: 100;
       font-size: 2.3rem;
       line-height: 2.3rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: clip;
     }
 
     &__surname {
       font-weight: 900;
       font-size: 2.7rem;
       line-height: 2.2rem;
-      overflow: hidden;
-      text-overflow: clip;
       margin-bottom: 0.5rem;
       letter-spacing: -2px;
     }
@@ -48,9 +51,6 @@
     &__profession {
       font-size: 1rem;
       font-weight: 900;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: clip;
     }
   }
 }

@@ -82,22 +82,17 @@ body main {
   }
 }
 body main .column-left {
-  flex: 1 1 262px;
-  margin-right: 50px;
-}
-@media (min-width: 1000px) {
-  body main .column-left {
-    margin-right: 6%;
-  }
+  width: 36.5%;
+  margin-right: 7.5%;
 }
 @media (max-width: 816px) {
   body main .column-left {
     margin-right: 0;
-    flex: 1 1 316px;
+    width: 100%;
   }
 }
 body main .column-right {
-  flex: 1 1 408px;
+  flex: 1 1;
 }
 .line {
   display: flex;
@@ -157,29 +152,29 @@ body main .column-right {
 .avatar__circle-filler {
   padding-top: 100%;
 }
+.avatar__name,
+.avatar__surname,
+.avatar__profession {
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
 .avatar__name {
   font-weight: 100;
   font-size: 2.3rem;
   line-height: 2.3rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip;
 }
 .avatar__surname {
   font-weight: 900;
   font-size: 2.7rem;
   line-height: 2.2rem;
-  overflow: hidden;
-  text-overflow: clip;
   margin-bottom: 0.5rem;
   letter-spacing: -2px;
 }
 .avatar__profession {
   font-size: 1rem;
   font-weight: 900;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip;
 }
 .profile {
   margin-bottom: 1.2rem;
@@ -308,4 +303,4 @@ body main .column-right {
   margin: 0.29rem 0;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Iiwic291cmNlUm9vdCI6IiJ9*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyIsInNvdXJjZVJvb3QiOiIifQ==*/
