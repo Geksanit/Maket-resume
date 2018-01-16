@@ -237,7 +237,7 @@ body main .column-right {
 .education {
   margin-bottom: 2.3rem;
 }
-.education__ul {
+.education__list {
   list-style-image: url(icons/circle.svg);
   padding-left: 2.15rem;
   margin: 1rem 0 0 0;
@@ -245,7 +245,7 @@ body main .column-right {
 .experience {
   margin-bottom: 2.3rem;
 }
-.experience__ul {
+.experience__list {
   list-style-image: url(icons/circle.svg);
   padding-left: 2.15rem;
   margin: 1.6rem 0 0 0;
@@ -278,27 +278,27 @@ body main .column-right {
 .software__container .soft-mix {
   width: 45%;
 }
-.li-text {
+.line-text {
   margin: 0.58rem 0;
 }
-.li-text__title {
+.line-text__title {
   font-size: 1.1rem;
   font-weight: 900;
   color: #0270ba;
   text-transform: uppercase;
 }
-.li-text__date {
+.line-text__date {
   font-size: 1.1rem;
   font-weight: 900;
   margin-left: 0.58rem;
 }
-.li-text__place {
+.line-text__place {
   font-size: 1rem;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0;
 }
-.li-text__text {
+.line-text__text {
   font-size: 0.6rem;
   margin: 0.29rem 0;
 }

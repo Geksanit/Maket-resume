@@ -1,5 +1,5 @@
 include ../line/line
-include ../li-text/li-text
+include ../line-text/line-text
 
 mixin education(options)
     - options = options || {}
@@ -7,6 +7,6 @@ mixin education(options)
 
     .education
         +line(options)
-        ul.education__ul
-            each li in options.list
-                +li-text(li)
+        ul.education__list
+            each line in options.list
+                +line-text(line)
