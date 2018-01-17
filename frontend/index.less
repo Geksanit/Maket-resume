@@ -88,21 +88,17 @@ body {
     align-items: flex-start;
 
     .column-left {
-      flex: 1 1 262px;
-      margin-right: 50px;
-
-      @media (min-width: 1000px) {
-        margin-right: 6%;
-      }
+      width: 36.5%;
+      margin-right: 7.5%;
 
       @media (max-width: 816px) {
         margin-right: 0;
-        flex: 1 1 316px;
+        width: 100%;
       }
     }
 
     .column-right {
-      flex:  1 1 408px;
+      flex:  1 1;
     }
   }
 }
@@ -131,5 +127,5 @@ body {
 @import 'components/software/software';
 .software(@blue,@gray);
 
-@import 'components/li-text/li-text';
-.li-text(@blue);
+@import 'components/line-text/line-text';
+.line-text(@blue);

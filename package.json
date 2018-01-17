@@ -5,8 +5,8 @@
   "main": "less.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --watch",
-    "build": "webpack"
+    "dev": "./node_modules/.bin/webpack --watch ",
+    "build": "./node_modules/.bin/webpack"
   },
   "repository": {
     "type": "git",

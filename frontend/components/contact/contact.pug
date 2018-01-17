@@ -8,7 +8,7 @@ mixin contact(options)
     - options = options || {}
     - options.list = options.list || []
 
-    .contact
+    section.contact
         +line(options)
         each contact in options.list
             +contact__line(contact[0], contact[1])

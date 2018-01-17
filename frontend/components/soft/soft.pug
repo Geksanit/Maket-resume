@@ -8,7 +8,4 @@ mixin soft(options, mix)
     div(class = "soft " + mix)
         span.soft__name #{options.name}
         .soft__progress
-            - for (var counter = 10; counter < options.percent; counter += 10)
-                .soft__percent-10
-            - for (var counter = 0; counter < (options.percent % 10); counter += 1)
-                .soft__percent-1
+            .soft__filler(style = "width:" + options.percent + "%;")

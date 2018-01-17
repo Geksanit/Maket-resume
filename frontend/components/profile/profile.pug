@@ -4,6 +4,6 @@ mixin profile(options)
         - options = {}
     - options.text = options.text || 'text'
 
-    .profile
+    section.profile
         +line(options)
         p.profile__text !{options.text}

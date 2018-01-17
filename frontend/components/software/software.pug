@@ -5,7 +5,7 @@ mixin software(options)
     - options = options || {}
     - options.list = options.list || []
 
-    .software
+    section.software
         +line(options)
         .software__container
             each soft in options.list
