@@ -1,4 +1,4 @@
-include ../line/line
+include ../header/header
 include ../soft/soft
 
 mixin software(options)
@@ -7,7 +7,7 @@ mixin software(options)
     - options.mix = options.mix || ''
 
     section(class="software "+options.mix)
-        +line(options)
+        +header(options)
         .software__container
             each soft in options.list
                 +soft(soft, 'soft-mix')

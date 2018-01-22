@@ -1,4 +1,4 @@
-mixin line-text(options)
+mixin list-item(options)
     if (!options || (typeof(options) !== 'object'))
         - options = {}
     - options.title = options.title || 'title'
@@ -6,8 +6,8 @@ mixin line-text(options)
     - options.place = options.place || 'place'
     - options.text = options.text || 'text'
 
-    li.line-text
-        span.line-text__title #{options.title}
-        span.line-text__date #{options.date }
-        p.line-text__place #{options.place}
-        p.line-text__text !{options.text}
+    li.list-item
+        span.list-item__title #{options.title}
+        span.list-item__date #{options.date }
+        p.list-item__place #{options.place}
+        p.list-item__text !{options.text}

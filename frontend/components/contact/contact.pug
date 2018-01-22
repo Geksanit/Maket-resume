@@ -1,4 +1,4 @@
-include ../line/line
+include ../header/header
 mixin contact__line(name, value)
     p.contact__line
         span.contact__name #{name}
@@ -10,6 +10,6 @@ mixin contact(options)
     - options.mix = options.mix || ''
 
     section(class="contact " + options.mix)
-        +line(options)
+        +header(options)
         each contact in options.list
             +contact__line(contact[0], contact[1])

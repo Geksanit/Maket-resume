@@ -1,4 +1,4 @@
-include ../line/line
+include ../header/header
 mixin profile(options)
     if !options
         - options = {}
@@ -6,5 +6,5 @@ mixin profile(options)
     - options.mix = options.mix || ''
 
     section(class="profile " + options.mix)
-        +line(options)
+        +header(options)
         p.profile__text !{options.text}

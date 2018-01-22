@@ -1,4 +1,4 @@
-include ../line/line
+include ../header/header
 include ../progress/progress
 
 mixin skills__line(name,value)
@@ -12,7 +12,7 @@ mixin skills(options)
     - options.mix = options.mix || ''
 
     section(class="skills " + options.mix)
-        +line(options)
+        +header(options)
         .skills__container
             each skill in options.list
                 +skills__line(skill[0], skill[1])

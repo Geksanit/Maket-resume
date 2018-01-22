@@ -1,15 +1,15 @@
-mixin line(options)
+mixin header(options)
     - // if (!options || (typeof(options) !== 'object'))
     if !options
         - options = {}
     if (!options.title)
         - options.title = 'Title'
 
-    header.line
+    header.header
         if (options.src)
             - var url = require('./icons/' + options.src + '.png')
-            .line__icon(style = "background-image: url(" + url + ")")
+            .header__icon(style = "background-image: url(" + url + ")")
         else
-            .line__icon
-        .line__title #{options.title}
-        .line__line
+            .header__icon
+        .header__title #{options.title}
+        .header__line

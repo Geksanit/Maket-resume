@@ -1,5 +1,5 @@
-include ../line/line
-include ../line-text/line-text
+include ../header/header
+include ../list-item/list-item
 
 mixin experience(options)
     - options = options || {}
@@ -7,7 +7,7 @@ mixin experience(options)
     - options.mix = options.mix || ''
 
     section(class="experience " + options.mix)
-        +line(options)
+        +header(options)
         ul.experience__list
-            each line in options.list
-                +line-text(line)
+            each item in options.list
+                +list-item(item)
