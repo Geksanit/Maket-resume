@@ -91,8 +91,21 @@ body main .column-left {
     width: 100%;
   }
 }
+body main .column-left .avatar-mix {
+  margin-bottom: 3rem;
+}
+body main .column-left .profile-mix {
+  margin-bottom: 1.2rem;
+}
+body main .column-left .contact-mix {
+  margin-bottom: 1.6rem;
+}
 body main .column-right {
   flex: 1 1;
+}
+body main .column-right .education-mix,
+body main .column-right .experience-mix {
+  margin-bottom: 2.3rem;
 }
 .line {
   display: flex;
@@ -134,7 +147,6 @@ body main .column-right {
   text-align: center;
   padding-left: 5%;
   padding-top: 0.6rem;
-  margin-bottom: 3rem;
 }
 .avatar__circle {
   box-sizing: border-box;
@@ -177,14 +189,8 @@ body main .column-right {
   font-size: 1rem;
   font-weight: 900;
 }
-.profile {
-  margin-bottom: 1.2rem;
-}
 .profile__text {
   font-size: 0.62rem;
-}
-.contact {
-  margin-bottom: 1.6rem;
 }
 .contact__line {
   margin: 1.13rem 0;
@@ -235,16 +241,10 @@ body main .column-right {
   margin-bottom: 0.8rem;
   width: 100%;
 }
-.education {
-  margin-bottom: 2.3rem;
-}
 .education__list {
   list-style-image: url(icons/circle.svg);
   padding-left: 2.15rem;
   margin: 1rem 0 0 0;
-}
-.experience {
-  margin-bottom: 2.3rem;
 }
 .experience__list {
   list-style-image: url(icons/circle.svg);

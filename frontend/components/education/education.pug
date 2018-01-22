@@ -4,8 +4,9 @@ include ../line-text/line-text
 mixin education(options)
     - options = options || {}
     - options.list = options.list || []
+    - options.mix = options.mix || ''
 
-    section.education
+    section(class="education " + options.mix)
         +line(options)
         ul.education__list
             each line in options.list

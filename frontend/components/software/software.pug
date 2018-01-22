@@ -4,8 +4,9 @@ include ../soft/soft
 mixin software(options)
     - options = options || {}
     - options.list = options.list || []
+    - options.mix = options.mix || ''
 
-    section.software
+    section(class="software "+options.mix)
         +line(options)
         .software__container
             each soft in options.list

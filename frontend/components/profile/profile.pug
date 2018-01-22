@@ -3,7 +3,8 @@ mixin profile(options)
     if !options
         - options = {}
     - options.text = options.text || 'text'
+    - options.mix = options.mix || ''
 
-    section.profile
+    section(class="profile " + options.mix)
         +line(options)
         p.profile__text !{options.text}

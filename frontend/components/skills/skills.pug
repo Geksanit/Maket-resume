@@ -9,8 +9,9 @@ mixin skills__line(name,value)
 mixin skills(options)
     - options = options || {}
     - options.list = options.list || []
+    - options.mix = options.mix || ''
 
-    section.skills
+    section(class="skills " + options.mix)
         +line(options)
         .skills__container
             each skill in options.list

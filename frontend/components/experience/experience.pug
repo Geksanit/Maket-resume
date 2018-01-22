@@ -4,8 +4,9 @@ include ../line-text/line-text
 mixin experience(options)
     - options = options || {}
     - options.list = options.list || []
+    - options.mix = options.mix || ''
 
-    section.experience
+    section(class="experience " + options.mix)
         +line(options)
         ul.experience__list
             each line in options.list
