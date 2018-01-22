@@ -91,20 +91,20 @@ body main .column-left {
     width: 100%;
   }
 }
-body main .column-left .avatar-mix {
+body main .column-left .container-first {
   margin-bottom: 3rem;
 }
-body main .column-left .profile-mix {
+body main .column-left .container-second {
   margin-bottom: 1.2rem;
 }
-body main .column-left .contact-mix {
+body main .column-left .container-third {
   margin-bottom: 1.6rem;
 }
 body main .column-right {
   flex: 1 1;
 }
-body main .column-right .education-mix,
-body main .column-right .experience-mix {
+body main .column-right .container-first,
+body main .column-right .container-second {
   margin-bottom: 2.3rem;
 }
 .line {
