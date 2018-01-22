@@ -2,9 +2,6 @@
 
   .avatar {
     @width: 60.4%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-transform: uppercase;
     text-align: center;
     padding-left: 5%;
@@ -15,6 +12,8 @@
       box-sizing: border-box;
       width: @width;
       margin-bottom: 0.9rem;
+      margin-left: auto;
+      margin-right: auto;
       border-radius: 100%;
       padding: 4%;
       background: @color content-box;
@@ -32,6 +31,8 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: clip;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &__name {
