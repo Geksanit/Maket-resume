@@ -205,7 +205,7 @@ body main .column-right .container-second {
   display: inline-block;
   font-size: 0.9rem;
 }
-.contact__value a {
+.contact__link {
   color: black;
   text-decoration: none;
 }

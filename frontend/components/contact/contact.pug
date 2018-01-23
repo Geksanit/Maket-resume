@@ -1,8 +1,18 @@
 include ../header/header
+
 mixin contact__line(name, value)
     p.contact__line
         span.contact__name #{name}
-        span.contact__value !{value}
+        span.contact__value
+            case name
+                when 'e-mail'
+                    a.contact__link(href="mailto:" + value) #{value}
+                when 'phone'
+                    a.contact__link(href="tel:" + value) #{value}
+                when 'website'
+                    a.contact__link(href=value target = "_blank" rel = "noopener noreferrer") #{value}
+                default
+                    span !{value}
 
 mixin contact(options)
     - options = options || {}
