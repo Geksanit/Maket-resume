@@ -18,18 +18,18 @@ html
     body
         main
             .column.column-left
-                .container-first
+                .container-avatar
                     +avatar({ name: 'name here', surname: 'surname', profession: 'graphic designer' })
-                .container-second
+                .container-profile
                     +profile({ title: 'profile', src: 'profile-icon', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <strong>pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</strong>' })
-                .container-third
+                .container-contact
                     +contact({ title: 'contact', src: 'contact-icon', list: [
                         ['address', 'Main Street, City.'],
                         ['e-mail', 'contact@domain.com'],
                         ['phone', '555-555-555'],
                         ['website', 'www.yourweb.com']
                     ] })
-                .container-fourth
+                .container-skills
                     +skills({ title: 'skills', src: 'skills-icon', list: [
                         ['creative', 9],
                         ['teamwork', 11],
@@ -37,20 +37,20 @@ html
                         ['communicaton', 11]
                     ] })
             .column.column-right
-                .container-first
+                .container-education
                     +education({ title: 'education', src: 'education-icon', list: [
                         { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
                         { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
                         { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
                         { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' }
                     ] })
-                .container-second
+                .container-experience
                     +experience({ title:'experience', src:'experience-icon', list: [
                         { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
                         { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
                         { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' }
                     ] })
-                .container-third
+                .container-software
                     +software({ title: 'software', src: 'software-icon', list: [
                       { name: 'photoshop', percent: 90 },
                       { name: 'dreamweaver', percent: 80 },
