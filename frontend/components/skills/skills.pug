@@ -12,7 +12,8 @@ mixin skills(options)
     - options.mix = options.mix || ''
 
     section(class="skills " + options.mix)
-        +header(options)
+        .skills__header
+            +header(options)
         .skills__container
             each skill in options.list
                 +skills__line(skill[0], skill[1])

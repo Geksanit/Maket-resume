@@ -7,7 +7,9 @@ mixin education(options)
     - options.mix = options.mix || ''
 
     section(class="education " + options.mix)
-        +header(options)
+        .education__header
+            +header(options)
         ul.education__list
             each item in options.list
-                +list-item(item)
+                li.education__item
+                    +list-item(item)

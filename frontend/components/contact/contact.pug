@@ -20,6 +20,7 @@ mixin contact(options)
     - options.mix = options.mix || ''
 
     section(class="contact " + options.mix)
-        +header(options)
+        .contact__header
+            +header(options)
         each contact in options.list
             +contact__line(contact[0], contact[1])

@@ -6,5 +6,6 @@ mixin profile(options)
     - options.mix = options.mix || ''
 
     section(class="profile " + options.mix)
-        +header(options)
+        .profile__header
+            +header(options)
         p.profile__text !{options.text}
