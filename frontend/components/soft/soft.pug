@@ -1,6 +1,5 @@
 mixin soft(options)
-    if (!options || (typeof(options) !== 'object'))
-        - options = {}
+    - options = options || {}
     - options.name = options.name || 'name'
     - options.percent = options.percent || 50
 

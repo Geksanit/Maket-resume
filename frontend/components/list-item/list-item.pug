@@ -1,6 +1,5 @@
 mixin list-item(options)
-    if (!options || (typeof(options) !== 'object'))
-        - options = {}
+    - options = options || {}
     - options.title = options.title || 'title'
     - options.date = options.date || 'date'
     - options.place = options.place || 'place'

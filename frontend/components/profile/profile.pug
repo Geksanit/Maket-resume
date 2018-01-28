@@ -1,7 +1,6 @@
 include ../header/header
 mixin profile(options)
-    if !options
-        - options = {}
+    - options = options || {}
     - options.text = options.text || 'text'
 
     section(class="profile")

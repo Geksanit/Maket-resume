@@ -1,6 +1,5 @@
 mixin progress(options)
-    if (!options || (typeof(options) !== 'object'))
-        - options = {}
+    - options = options || {}
     - options.value = options.value || 1
     - options.max = options.max || 5
     if (options.value > options.max)

@@ -1,7 +1,5 @@
 mixin header(options)
-    - // if (!options || (typeof(options) !== 'object'))
-    if !options
-        - options = {}
+    - options = options || {}
     if (!options.title)
         - options.title = 'Title'
 
