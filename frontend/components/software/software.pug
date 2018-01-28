@@ -4,11 +4,11 @@ include ../soft/soft
 mixin software(options)
     - options = options || {}
     - options.list = options.list || []
-    - options.mix = options.mix || ''
 
-    section(class="software "+options.mix)
+    section(class="software")
         .software__header
             +header(options)
         .software__container
             each soft in options.list
-                +soft(soft, 'soft-mix')
+                .software__soft
+                    +soft(soft)

@@ -4,9 +4,8 @@ include ../list-item/list-item
 mixin experience(options)
     - options = options || {}
     - options.list = options.list || []
-    - options.mix = options.mix || ''
 
-    section(class="experience " + options.mix)
+    section(class="experience")
         .experience__header
             +header(options)
         ul.experience__list

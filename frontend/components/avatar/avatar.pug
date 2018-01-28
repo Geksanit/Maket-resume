@@ -4,9 +4,8 @@ mixin avatar(options)
     - options.name = options.name || 'name'
     - options.surname = options.surname || 'surname'
     - options.profession = options.profession || 'profession'
-    - options.mix = options.mix || ''
 
-    div(class="avatar " + options.mix)
+    div(class="avatar")
         if (options.src)
             - var url = require('./icons/' + options.src + '.png')
             .avatar__circle

@@ -4,14 +4,14 @@ include ../progress/progress
 mixin skills__line(name,value)
     .skills__line
         .skills__name #{name}
-        +progress({ mix: 'skills__progress-mix', max: 12, value: value })
+        .skills__progress
+            +progress({ max: 12, value: value })
 
 mixin skills(options)
     - options = options || {}
     - options.list = options.list || []
-    - options.mix = options.mix || ''
 
-    section(class="skills " + options.mix)
+    section(class="skills")
         .skills__header
             +header(options)
         .skills__container

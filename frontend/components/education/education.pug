@@ -4,9 +4,8 @@ include ../list-item/list-item
 mixin education(options)
     - options = options || {}
     - options.list = options.list || []
-    - options.mix = options.mix || ''
 
-    section(class="education " + options.mix)
+    section(class="education")
         .education__header
             +header(options)
         ul.education__list

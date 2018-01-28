@@ -1,13 +1,12 @@
 mixin progress(options)
     if (!options || (typeof(options) !== 'object'))
         - options = {}
-    - options.mix = options.mix || ''
     - options.value = options.value || 1
     - options.max = options.max || 5
     if (options.value > options.max)
         - options.value = options.max
 
-    div(class = "progress " + options.mix)
+    div(class = "progress")
         - for (var counter = 0; counter < options.max; counter += 1)
         if (counter < options.value)
             .progress__circle.progress_color_blue
