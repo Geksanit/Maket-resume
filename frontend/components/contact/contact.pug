@@ -22,4 +22,4 @@ mixin contact(options)
         .contact__header
             +header(options)
         each contact in options.list
-            +contact__line(contact[0], contact[1])
+            +contact__line(contact.name, contact.value)
