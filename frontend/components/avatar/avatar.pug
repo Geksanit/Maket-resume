@@ -1,11 +1,10 @@
 mixin avatar(options)
-    if !options
-        - options = {}
+    - options = options || {}
     - options.name = options.name || 'name'
     - options.surname = options.surname || 'surname'
     - options.profession = options.profession || 'profession'
 
-    .avatar
+    div(class="avatar")
         if (options.src)
             - var url = require('./icons/' + options.src + '.png')
             .avatar__circle

@@ -17,38 +17,45 @@ html
         title Resume
     body
         main
-            .column.column-left
-                +avatar({ name: 'name here', surname: 'surname', profession: 'graphic designer' })
-                +profile({ title: 'profile', src: 'profile-icon', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <strong>pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</strong>' })
-                +contact({ title: 'contact', src: 'contact-icon', list: [
-                    ['address', 'Main Street, City.'],
-                    ['e-mail', '<a href = "mailto:contact@domain.com">contact@domain.com</a>'],
-                    ['phone', '<a href = "tel:555-555-555">555-555-555</a>'],
-                    ['website', '<a href = "www.yourweb.com" target = "_blank" rel = "noopener noreferrer">www.yourweb.com</a>']
-                ] })
-                +skills({ title: 'skills', src: 'skills-icon', list: [
-                    ['creative', 9],
-                    ['teamwork', 11],
-                    ['innovate', 6],
-                    ['communicaton', 11]
-                ] })
-            .column.column-right
-                +education({ title: 'education', src: 'education-icon', list: [
-                    { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
-                    { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
-                    { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
-                    { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' }
-                ] })
-                +experience({ title:'experience', src:'experience-icon', list: [
-                    { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
-                    { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
-                    { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' }
-                ] })
-                +software({ title: 'software', src: 'software-icon', list: [
-                  { name: 'photoshop', percent: 90 },
-                  { name: 'dreamweaver', percent: 80 },
-                  { name: 'illustrator', percent: 70 },
-                  { name: 'after effects', percent: 60 },
-                  { name: 'indesign', percent: 55 },
-                  { name: 'html&css', percent: 99 }
-                ] })
+            .column-left
+                .column-left__container-avatar
+                    +avatar({ name: 'name here', surname: 'surname', profession: 'graphic designer' })
+                .column-left__container-profile
+                    +profile({ title: 'profile', src: 'profile-icon', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <strong>pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</strong>' })
+                .column-left__container-contact
+                    +contact({ title: 'contact', src: 'contact-icon', list: [
+                        { name:'address', value:'Main Street, City.' },
+                        { name:'e-mail', value:'contact@domain.com' },
+                        { name:'phone', value:'555-555-555' },
+                        { name:'website', value:'www.yourweb.com' }
+                    ] })
+                .column-left__container-skills
+                    +skills({ title: 'skills', src: 'skills-icon', list: [
+                        { name:'creative', value:9 },
+                        { name:'teamwork', value:11 },
+                        { name:'innovate', value:6 },
+                        { name:'communicaton', value:11 }
+                    ] })
+            .column-right
+                .column-right__container-education
+                    +education({ title: 'education', src: 'education-icon', list: [
+                        { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
+                        { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
+                        { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
+                        { title: 'master degree', date: '// Feb 2011-Jun 2014', place: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' }
+                    ] })
+                .column-right__container-experience
+                    +experience({ title:'experience', src:'experience-icon', list: [
+                        { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
+                        { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' },
+                        { title: 'company name', date: '// Feb 2011-Jun 2014', place: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.' }
+                    ] })
+                .column-right__container-software
+                    +software({ title: 'software', src: 'software-icon', list: [
+                        { name: 'photoshop', percent: 90 },
+                        { name: 'dreamweaver', percent: 80 },
+                        { name: 'illustrator', percent: 70 },
+                        { name: 'after effects', percent: 60 },
+                        { name: 'indesign', percent: 55 },
+                        { name: 'html&css', percent: 99 }
+                    ] })

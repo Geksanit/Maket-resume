@@ -1,7 +1,10 @@
 .contact(@color, @text){
 
   .contact {
-    margin-bottom: 1.6rem;
+
+    &__header {
+      margin-bottom: 0.6rem;
+    }
 
     &__line {
       margin: 1.13rem 0;
@@ -19,11 +22,11 @@
     &__value {
       display: inline-block;
       font-size: 0.9rem;
+    }
 
-      a {
+    &__link{
         color: @text;
         text-decoration: none;
-      }
     }
   }
 }

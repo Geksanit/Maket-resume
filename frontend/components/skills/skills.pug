@@ -1,17 +1,19 @@
-include ../line/line
+include ../header/header
 include ../progress/progress
 
-mixin skills__line(name,value)
+mixin skills__line(name, value)
     .skills__line
         .skills__name #{name}
-        +progress({ mix: 'skills__progress-mix', max: 12, value: value })
+        .skills__progress
+            +progress({ max: 12, value: value })
 
 mixin skills(options)
     - options = options || {}
     - options.list = options.list || []
 
-    section.skills
-        +line(options)
+    section(class="skills")
+        .skills__header
+            +header(options)
         .skills__container
             each skill in options.list
-                +skills__line(skill[0], skill[1])
+                +skills__line(skill.name, skill.value)

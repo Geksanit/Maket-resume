@@ -95,16 +95,32 @@ body {
         margin-right: 0;
         width: 100%;
       }
+
+      &__container-avatar {
+        margin-bottom: 3rem;
+      }
+
+      &__container-profile {
+        margin-bottom: 1.2rem;
+      }
+
+      &__container-contact {
+        margin-bottom: 1.6rem;
+      }
     }
 
     .column-right {
       flex:  1 1;
+
+      &__container-education, &__container-experience {
+        margin-bottom: 2.3rem;
+      }
     }
   }
 }
 
-@import 'components/line/line';
-.line(@blue);
+@import 'components/header/header';
+.header(@blue);
 
 @import 'components/avatar/avatar';
 .avatar(@blue);
@@ -127,5 +143,5 @@ body {
 @import 'components/software/software';
 .software(@blue,@gray);
 
-@import 'components/line-text/line-text';
-.line-text(@blue);
+@import 'components/list-item/list-item';
+.list-item(@blue);

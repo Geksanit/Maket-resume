@@ -1,12 +1,14 @@
-include ../line/line
-include ../line-text/line-text
+include ../header/header
+include ../list-item/list-item
 
 mixin education(options)
     - options = options || {}
     - options.list = options.list || []
 
-    section.education
-        +line(options)
+    section(class="education")
+        .education__header
+            +header(options)
         ul.education__list
-            each line in options.list
-                +line-text(line)
+            each item in options.list
+                li.education__item
+                    +list-item(item)

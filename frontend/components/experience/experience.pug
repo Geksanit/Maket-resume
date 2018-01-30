@@ -1,12 +1,14 @@
-include ../line/line
-include ../line-text/line-text
+include ../header/header
+include ../list-item/list-item
 
 mixin experience(options)
     - options = options || {}
     - options.list = options.list || []
 
-    section.experience
-        +line(options)
+    section(class="experience")
+        .experience__header
+            +header(options)
         ul.experience__list
-            each line in options.list
-                +line-text(line)
+            each item in options.list
+                li.experience__item
+                    +list-item(item)

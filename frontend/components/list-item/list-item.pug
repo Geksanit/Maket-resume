@@ -1,0 +1,12 @@
+mixin list-item(options)
+    - options = options || {}
+    - options.title = options.title || 'title'
+    - options.date = options.date || 'date'
+    - options.place = options.place || 'place'
+    - options.text = options.text || 'text'
+
+    .list-item
+        span.list-item__title #{options.title}
+        span.list-item__date #{options.date }
+        p.list-item__place #{options.place}
+        p.list-item__text !{options.text}

@@ -1,0 +1,13 @@
+mixin header(options)
+    - options = options || {}
+    if (!options.title)
+        - options.title = 'Title'
+
+    header.header
+        if (options.src)
+            - var url = require('./icons/' + options.src + '.png')
+            .header__icon(style = "background-image: url(" + url + ")")
+        else
+            .header__icon
+        .header__title #{options.title}
+        .header__line
